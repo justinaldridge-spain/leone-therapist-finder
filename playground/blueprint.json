@@ -1,0 +1,23 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "activatePlugin",
+			"pluginPath": "leone-therapist-finder/leone-therapist-finder.php"
+		},
+		{
+			"step": "activatePlugin",
+			"pluginPath": "leone-demo-look/leone-demo-look.php"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require_once '/wordpress/wp-load.php'; require '/demo/seed.php';"
+		}
+	]
+}

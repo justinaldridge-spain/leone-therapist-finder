@@ -1,0 +1,48 @@
+{
+	"$schema": "https://playground.wordpress.net/blueprint-schema.json",
+	"meta": {
+		"title": "Leone Centre – Therapist Finder prototype",
+		"description": "Phase 1 prototype of the therapist finder, seeded with the Leone Centre team.",
+		"author": "justinaldridge-spain"
+	},
+	"landingPage": "/",
+	"preferredVersions": {
+		"php": "8.3",
+		"wp": "latest"
+	},
+	"login": true,
+	"steps": [
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/justinaldridge-spain/leone-therapist-finder/main/dist/leone-therapist-finder.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "installPlugin",
+			"pluginData": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/justinaldridge-spain/leone-therapist-finder/main/dist/leone-demo-look.zip"
+			},
+			"options": {
+				"activate": true
+			}
+		},
+		{
+			"step": "unzip",
+			"zipFile": {
+				"resource": "url",
+				"url": "https://raw.githubusercontent.com/justinaldridge-spain/leone-therapist-finder/main/dist/leone-demo-content.zip"
+			},
+			"extractToPath": "/demo"
+		},
+		{
+			"step": "runPHP",
+			"code": "<?php require_once '/wordpress/wp-load.php'; require '/demo/seed.php';"
+		}
+	]
+}

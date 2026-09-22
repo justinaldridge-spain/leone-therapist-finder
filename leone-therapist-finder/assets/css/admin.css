@@ -1,0 +1,143 @@
+/* Leone Therapist Finder – admin. */
+
+.ltf-metabox h4 {
+	margin: 1.5em 0 0.5em;
+}
+
+.ltf-metabox label strong {
+	display: block;
+	margin-bottom: 4px;
+}
+
+.ltf-metabox__cols {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 24px;
+}
+
+.ltf-metabox__grow {
+	flex: 1 1 280px;
+}
+
+.ltf-locations {
+	max-width: 760px;
+}
+
+.ltf-locations td {
+	vertical-align: middle;
+}
+
+.ltf-locations label {
+	font-weight: 600;
+}
+
+/* List table */
+
+.column-ltf_where {
+	width: 17%;
+}
+
+.column-ltf_issues {
+	width: 5em;
+}
+
+.column-ltf_check {
+	width: 20%;
+}
+
+.ltf-pill-admin {
+	display: inline-block;
+	margin: 0 2px 3px 0;
+	padding: 1px 8px;
+	font-size: 12px;
+	border-radius: 999px;
+}
+
+.ltf-pill-admin.is-ok {
+	background: #e6f4ea;
+	color: #1e6b33;
+}
+
+.ltf-pill-admin.is-warn {
+	background: #fcf0e3;
+	color: #8a4b08;
+}
+
+.ltf-check.is-ok {
+	color: #1e6b33;
+	font-weight: 600;
+}
+
+.ltf-check.is-ok::before {
+	content: "✓ ";
+}
+
+.ltf-check.is-warn {
+	color: #8a4b08;
+}
+
+.ltf-check.is-muted {
+	color: #646970;
+}
+
+/* Settings page */
+
+.ltf-settings__grid {
+	display: grid;
+	grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+	gap: 20px;
+	align-items: start;
+	margin-top: 16px;
+}
+
+@media (max-width: 1100px) {
+	.ltf-settings__grid {
+		grid-template-columns: 1fr;
+	}
+}
+
+.ltf-admin-card {
+	margin-bottom: 20px;
+	padding: 4px 20px 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 6px;
+}
+
+.ltf-admin-card .form-table th {
+	width: 180px;
+}
+
+.ltf-builder__fixed label {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 8px;
+}
+
+.ltf-builder__fixed label span {
+	width: 70px;
+}
+
+.ltf-builder__check {
+	display: inline-block;
+	margin: 0 14px 6px 0;
+}
+
+.ltf-builder__check.is-disabled {
+	opacity: 0.5;
+}
+
+.ltf-builder__output {
+	display: flex;
+	gap: 8px;
+}
+
+.ltf-builder__output input {
+	font-size: 13px;
+}
+
+.ltf-data-check {
+	margin: 0 0 12px 18px;
+	list-style: disc;
+}

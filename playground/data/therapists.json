@@ -1,0 +1,1217 @@
+{
+  "generated": "2026-09-21",
+  "source": "https://www.leonecentre.com/about-us/meet-our-team/ and individual profile pages",
+  "note": "Services mapped from each card's \"can help with\" links and role title. Issues auto-matched from bio text by keyword - needs review by the Leone Centre team.",
+  "locations": [
+    {
+      "slug": "online",
+      "name": "Online",
+      "description": "Secure video sessions on Zoom, wherever you are."
+    },
+    {
+      "slug": "fulham",
+      "name": "Fulham",
+      "description": "Studio 19, Hurlingham Studios, Ranelagh Gardens, London SW6 3PA"
+    },
+    {
+      "slug": "kensington",
+      "name": "Kensington",
+      "description": "2 Kenway Road, London SW5 0RR"
+    },
+    {
+      "slug": "wimbledon",
+      "name": "Wimbledon",
+      "description": "40-44 The Broadway, London SW19 1RQ"
+    },
+    {
+      "slug": "belgravia",
+      "name": "Belgravia",
+      "description": "2 Eaton Gate, London SW1W 9BJ"
+    }
+  ],
+  "services": [
+    {
+      "slug": "individual-counselling",
+      "name": "Individual Counselling"
+    },
+    {
+      "slug": "couples-counselling",
+      "name": "Couples & Relationship Counselling"
+    },
+    {
+      "slug": "family-therapy",
+      "name": "Family Therapy"
+    },
+    {
+      "slug": "psychosexual-therapy",
+      "name": "Psychosexual Therapy"
+    },
+    {
+      "slug": "divorce-counselling",
+      "name": "Divorce Counselling"
+    },
+    {
+      "slug": "cbt",
+      "name": "CBT"
+    },
+    {
+      "slug": "emdr",
+      "name": "EMDR Therapy"
+    },
+    {
+      "slug": "neurodiversity-affirmative",
+      "name": "Neurodiversity Affirmative Therapy"
+    },
+    {
+      "slug": "lgbtqi-affirmative",
+      "name": "LGBTQI+ Affirmative Counselling"
+    },
+    {
+      "slug": "fast-track",
+      "name": "Fast Track Therapy"
+    },
+    {
+      "slug": "organisational",
+      "name": "Organisational & Leadership Consultancy"
+    }
+  ],
+  "issues": [
+    {
+      "slug": "relationships",
+      "name": "Relationships",
+      "children": [
+        {
+          "slug": "infidelity-trust",
+          "name": "Infidelity & trust"
+        },
+        {
+          "slug": "separation-divorce",
+          "name": "Separation & divorce"
+        },
+        {
+          "slug": "communication-conflict",
+          "name": "Communication & conflict"
+        },
+        {
+          "slug": "sex-intimacy",
+          "name": "Sex & intimacy"
+        },
+        {
+          "slug": "polyamory",
+          "name": "Polyamory & non-monogamy"
+        }
+      ]
+    },
+    {
+      "slug": "mental-health",
+      "name": "Mental health",
+      "children": [
+        {
+          "slug": "anxiety",
+          "name": "Anxiety & panic"
+        },
+        {
+          "slug": "stress-burnout",
+          "name": "Stress & burnout"
+        },
+        {
+          "slug": "depression",
+          "name": "Depression & low mood"
+        },
+        {
+          "slug": "trauma",
+          "name": "Trauma & PTSD"
+        },
+        {
+          "slug": "self-esteem",
+          "name": "Self-esteem & confidence"
+        },
+        {
+          "slug": "addiction",
+          "name": "Addiction & compulsive behaviour"
+        },
+        {
+          "slug": "eating-disorders",
+          "name": "Eating disorders"
+        },
+        {
+          "slug": "self-harm",
+          "name": "Self-harm"
+        }
+      ]
+    },
+    {
+      "slug": "family-life",
+      "name": "Family & life changes",
+      "children": [
+        {
+          "slug": "parenting",
+          "name": "Parenting & young people"
+        },
+        {
+          "slug": "perinatal",
+          "name": "Pregnancy & new parents"
+        },
+        {
+          "slug": "fertility",
+          "name": "Fertility & IVF"
+        },
+        {
+          "slug": "adoption-fostering",
+          "name": "Adoption & fostering"
+        },
+        {
+          "slug": "bereavement",
+          "name": "Bereavement & grief"
+        },
+        {
+          "slug": "life-transitions",
+          "name": "Life transitions"
+        },
+        {
+          "slug": "menopause",
+          "name": "Menopause"
+        },
+        {
+          "slug": "health-diagnosis",
+          "name": "Illness & life-changing diagnoses"
+        }
+      ]
+    },
+    {
+      "slug": "identity-work",
+      "name": "Identity & work",
+      "children": [
+        {
+          "slug": "neurodiversity",
+          "name": "Neurodiversity (ADHD, autism)"
+        },
+        {
+          "slug": "lgbtqia",
+          "name": "LGBTQIA+ & gender identity"
+        },
+        {
+          "slug": "work-career",
+          "name": "Work & career"
+        },
+        {
+          "slug": "abuse",
+          "name": "Abuse & domestic violence"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "slug": "english",
+      "name": "English"
+    },
+    {
+      "slug": "italian",
+      "name": "Italian"
+    },
+    {
+      "slug": "russian",
+      "name": "Russian"
+    }
+  ],
+  "therapists": [
+    {
+      "name": "Nicky Wildin",
+      "slug": "nicky-wildin",
+      "menu_order": 0,
+      "role": "Individual and Couples Therapist",
+      "years": 20,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "11335749"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "stress-burnout",
+        "trauma",
+        "self-harm",
+        "parenting",
+        "bereavement",
+        "life-transitions",
+        "neurodiversity"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/01/Background-1.jpg",
+      "photo_alt": "Nicky Wildin Couples Therapist",
+      "excerpt": "Cambridge-educated and BACP-registered member Nicky brings a warm approach and a depth of experience shaped by her extensive work in the relational and mental health sector, including partnerships with the NHS and educational settings.",
+      "content": [
+        "Cambridge-educated and BACP-registered member Nicky brings a warm approach and a depth of experience shaped by her extensive work in the relational and mental health sector, including partnerships with the NHS and educational settings.",
+        "Nicky provides a safe, reflective, collaborative space grounded in trust, humour, and hope for a brighter future. She works to address challenges such as trust, bereavement, relationship difficulties, communication issues, infidelity, parenting struggles, intimacy issues, and personal growth. Her integrative approach incorporates Person-Centred therapy, CBT, Attachment Theory, and Narrative Therapy, tailored to meet each client’s unique needs."
+      ],
+      "source": "https://www.leonecentre.com/associates/nicky-wildin/"
+    },
+    {
+      "name": "Carlene Harvey",
+      "slug": "carlene-harvey",
+      "menu_order": 1,
+      "role": "Individual and Couples Therapist",
+      "years": 20,
+      "accreditations": [
+        "BACP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "11202646"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "self-harm",
+        "parenting",
+        "bereavement",
+        "life-transitions",
+        "neurodiversity",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/09/Background.jpg",
+      "photo_alt": "Carlene Harvey, Couples therapist at Leone Centre",
+      "excerpt": "A highly experienced Couple, Individual and Systemic Therapist, BACP accredited, with over 20 years of therapeutic practice. She holds a Master of Education in Psychotherapeutic Counselling and a full specialism in Mentalisation-Based Therapy for Parenting Under Pressure (MBT-PP, Tavistock). Carlene is a trauma-informed therapist with experience in ADHD and neurodiversity, and extensive work with the RNIB, alongside her practice across the charity sector, NHS, and schools, with experience supporting individuals, couples and parents across a wide range of emotional and relational challenges. Her background as both Therapist and Clinical Supervisor reflects a deep understanding of the complexities of mental, relational, and neurodevelopmental health.",
+      "content": [
+        "A highly experienced Couple, Individual and Systemic Therapist, BACP accredited, with over 20 years of therapeutic practice. She holds a Master of Education in Psychotherapeutic Counselling and a full specialism in Mentalisation-Based Therapy for Parenting Under Pressure (MBT-PP, Tavistock). Carlene is a trauma-informed therapist with experience in ADHD and neurodiversity, and extensive work with the RNIB, alongside her practice across the charity sector, NHS, and schools, with experience supporting individuals, couples and parents across a wide range of emotional and relational challenges. Her background as both Therapist and Clinical Supervisor reflects a deep understanding of the complexities of mental, relational, and neurodevelopmental health.",
+        "Carlene’s therapeutic style blends warmth, insight, and integrity, offering guidance that empowers clients to rewrite their stories, reconnect with themselves, and rebuild relationships with authenticity and understanding. She specialises in supporting parents, couples, and individuals to create healthier, more fulfilling emotional lives, with sensitivity to neurodiversity and sensory difference. Additional training in relationship breakdown and separation further informs her work with individuals and couples navigating separation, changing relationship dynamics, parenting after separation and co-parenting.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/carlene-harvey/"
+    },
+    {
+      "name": "Holly Roberts",
+      "slug": "holly-roberts",
+      "menu_order": 2,
+      "role": "Individual and Couples Psychotherapist",
+      "years": 12,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "14235641"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "neurodiversity-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "polyamory",
+        "anxiety",
+        "stress-burnout",
+        "trauma",
+        "self-esteem",
+        "parenting",
+        "perinatal",
+        "fertility",
+        "life-transitions",
+        "neurodiversity",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2026/06/Background-14.png",
+      "photo_alt": "Holly Roberts, Leone Centre Family and Relationship Therapist",
+      "excerpt": "Holly Roberts is a BACP Registered Integrative Therapist with over 12 years of experience supporting individuals and couples through some of life’s most complex emotional and relationship challenges. Whether clients are navigating trauma, attachment wounds, neurodivergence, fertility journeys, relationship difficulties, low self-worth or significant life transitions, Holly offers a calm, compassionate and thoughtful space where they can begin to make sense of their experiences.",
+      "content": [
+        "Holly Roberts is a BACP Registered Integrative Therapist with over 12 years of experience supporting individuals and couples through some of life’s most complex emotional and relationship challenges. Whether clients are navigating trauma, attachment wounds, neurodivergence, fertility journeys, relationship difficulties, low self-worth or significant life transitions, Holly offers a calm, compassionate and thoughtful space where they can begin to make sense of their experiences.",
+        "Clients value Holly’s warm, steady presence and her ability to help them feel heard and understood without judgement. She believes meaningful change begins with feeling safe enough to explore the stories, patterns and relationships that have shaped us. Alongside gentle curiosity, Holly brings insight and practical understanding to help clients strengthen their relationships with themselves and others.",
+        "Holly’s integrative approach draws on attachment-informed, trauma-informed, psychodynamic, systemic, person-centred, relational and Compassion-Focused Therapy (CFT). She tailors therapy to each individual or couple, recognising that every person’s story is unique.",
+        "In 2022, Holly completed Compassionate Inquiry training with Dr. Gabor Maté, further deepening her work with trauma, attachment and emotional healing. She has particular experience helping clients understand how early experiences continue to shape present-day relationships and emotional wellbeing.",
+        "Holly also has extensive experience supporting people in polyamorous and ethically non-monogamous relationships, offering an inclusive, affirming space where clients can explore their relationships openly and without assumption.",
+        "Online appointments available."
+      ],
+      "source": "https://www.leonecentre.com/associates/holly-roberts/"
+    },
+    {
+      "name": "Lucy Robertson-Ritchie",
+      "slug": "lucy-robertson-ritchie",
+      "menu_order": 3,
+      "role": "Individual, Couples and Family Systemic Psychotherapist",
+      "years": 20,
+      "accreditations": [],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "14161144"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "family-therapy",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-harm",
+        "parenting",
+        "adoption-fostering",
+        "neurodiversity",
+        "lgbtqia"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2026/06/Background-11.png",
+      "photo_alt": "Lucy Robertson Ritchie - Leone Centre Therapist",
+      "excerpt": "Lucy is one of the most experienced therapists around. Highly skilled Systemic and Family Psychotherapist, Supervisor, Trainer, and Lecturer with over 20 years of experience supporting individuals, couples, children, young people, and families across NHS, charity, educational, and private settings.",
+      "content": [
+        "Lucy is one of the most experienced therapists around. Highly skilled Systemic and Family Psychotherapist, Supervisor, Trainer, and Lecturer with over 20 years of experience supporting individuals, couples, children, young people, and families across NHS, charity, educational, and private settings.",
+        "She works collaboratively and compassionately, drawing on systemic, trauma-informed, attachment-based, and relational approaches to help clients better understand their experiences, strengthen relationships, and navigate emotional and family challenges.",
+        "Lucy supports individuals, couples, parents, foster carers, adoptive families, and young people experiencing anxiety, depression, trauma, self-harm, relationship difficulties, neurodiversity (ASD/ADHD), and family conflict. She has particular experience working with adoption, fostering, developmental trauma, and high-emotion family systems.",
+        "Lucy also integrates mindfulness approaches into her work where appropriate, supporting emotional regulation, safety, and wellbeing.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/lucy-robertson-ritchie/"
+    },
+    {
+      "name": "Rasa Motiejune",
+      "slug": "rasa-motiejune",
+      "menu_order": 4,
+      "role": "Couples and Family Therapist",
+      "years": 15,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "12334720"
+      },
+      "services": [
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "cbt",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "eating-disorders",
+        "parenting",
+        "life-transitions",
+        "neurodiversity",
+        "lgbtqia",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/05/Background-4.png",
+      "photo_alt": "Rasa Motiejune, therapist at Leone Centre",
+      "excerpt": "Rasa is a highly experienced and sought-after Family and Couple Systemic Psychotherapist with over 15 years of experience across the NHS and private practice. Registered with the UKCP, Rasa draws on Systemic Psychotherapy, CBT (Cognitive Behavioural Therapy), DBT (Dialectical Behaviour Therapy), Trauma-Focused CBT and mindfulness, integrating these approaches to meet each client’s needs.",
+      "content": [
+        "Rasa is a highly experienced and sought-after Family and Couple Systemic Psychotherapist with over 15 years of experience across the NHS and private practice. Registered with the UKCP, Rasa draws on Systemic Psychotherapy, CBT (Cognitive Behavioural Therapy), DBT (Dialectical Behaviour Therapy), Trauma-Focused CBT and mindfulness, integrating these approaches to meet each client’s needs.",
+        "Clients value her calm, thoughtful and compassionate approach, which helps them make sense of difficult experiences and move forward with greater clarity and confidence.",
+        "Rasa has particular interest and experience in supporting couples experiencing communication difficulties, conflict and disconnection. She also works with parents using a Non-Violent Resistance (NVR) approach to reduce conflict, strengthen relationships and respond to challenging behaviours with calm, confident leadership. Rasa supports individuals and families navigating life transitions and complex relationship dynamics, and has experience working with LGBTQ+ and neurodivergent clients, offering an affirming, inclusive approach where every identity and background is respected.",
+        "Warm, grounded and genuinely curious, Rasa believes every person’s story deserves to be understood in its full context. Whether working with relationship difficulties, family conflict, parenting challenges, trauma, anxiety or eating disorders, she helps clients recognise unhelpful patterns, strengthen resilience and build healthier ways of relating to themselves and others.",
+        "Rasa offers online therapy for couples, parents and families, helping them strengthen relationships, navigate challenges and create meaningful, lasting change.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/rasa-motiejune/"
+    },
+    {
+      "name": "Lucy Watney",
+      "slug": "lucy-watney",
+      "menu_order": 5,
+      "role": "Individual, Couples and Family Therapist",
+      "years": 15,
+      "accreditations": [
+        "UKCP"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "wimbledon"
+      ],
+      "calendars": {
+        "online": "12010816",
+        "fulham": "12010813",
+        "wimbledon": "12010802"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "addiction",
+        "parenting",
+        "bereavement",
+        "neurodiversity"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/05/Background-19.png",
+      "photo_alt": "Lucy Watney - Couples and Family Therapist at Leone Centre",
+      "excerpt": "With over 15 years of therapeutic experience, Lucy Watney is a highly sought-after Family and Systemic Psychotherapist, accredited by the UKCP and a professional member of the Association for Family Therapy and Systemic Practice. Lucy’s experience spans across the NHS, schools, and charities.",
+      "content": [
+        "With over 15 years of therapeutic experience, Lucy Watney is a highly sought-after Family and Systemic Psychotherapist, accredited by the UKCP and a professional member of the Association for Family Therapy and Systemic Practice. Lucy’s experience spans across the NHS, schools, and charities.",
+        "Lucy is warm, perceptive and collaborative; she helps clients look beyond the immediate difficulty to understand the patterns, experiences and relationships that may be keeping them stuck. Lucy works with individuals, couples and families, supporting children, young people and parents through communication issues, conflict, relationship strain, neurodiversity and differences in parenting approaches.",
+        "Lucy uses emotional regulation techniques and body awareness, where appropriate, to help clients with conflict, stress, and communication issues, helping to support constructive and meaningful conversations.",
+        "Drawing on attachment theory, narrative therapy and solution-focused approaches, Lucy focuses therapy on each client’s needs and goals. Her earlier training as a Dance Movement Therapist adds a distinctive dimension to her work, bringing an awareness of how emotional experiences can also be held and expressed through the body.",
+        "Offering both in-person and face-to-face appointments in Fulham and Wimbledon."
+      ],
+      "source": "https://www.leonecentre.com/associates/lucy-watney/"
+    },
+    {
+      "name": "Tonia Forster",
+      "slug": "tonia-forster",
+      "menu_order": 6,
+      "role": "Individual, Couples and Family Therapist",
+      "years": 30,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "11202545"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "anxiety",
+        "depression",
+        "trauma",
+        "eating-disorders",
+        "parenting",
+        "life-transitions",
+        "neurodiversity",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/12/LC-therapists-pictures.png",
+      "photo_alt": "Tonia Forster, Family and Couples Therapist at Leone Centre",
+      "excerpt": "Tonia is a highly experienced UKCP and AFT registered Family Therapist and Supervisor of Therapists, with over 30 years of experience supporting individuals, couples, and families.",
+      "content": [
+        "Tonia is a highly experienced UKCP and AFT registered Family Therapist and Supervisor of Therapists, with over 30 years of experience supporting individuals, couples, and families.",
+        "She works collaboratively and with warmth, drawing on systemic and relational approaches to help clients understand patterns, process lived experience, and develop practical, sustainable ways to manage life’s challenges.",
+        "Tonia works with couples facing relationship difficulties or seeking to rebuild trust, families experiencing tension, transitions, or emotional strain, and individuals wanting to understand relational patterns, manage anxiety or low mood, or process major life challenges. She also provides a reflective space for anyone looking to explore personal concerns or ideas in a supportive environment.",
+        "She helps clients address a wide range of issues, including communication difficulties, eating distress, family tensions, infidelity, parenting challenges, ASD/ADHD, and emotional concerns such as anxiety, depression, and trauma.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/tonia-forster/"
+    },
+    {
+      "name": "Martina Bador",
+      "slug": "martina-bador",
+      "menu_order": 7,
+      "role": "Individual, Couples and Psychosexual Therapist",
+      "years": 18,
+      "accreditations": [
+        "BACP",
+        "COSRT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "7199615"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "lgbtqi-affirmative",
+        "organisational"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "depression",
+        "addiction",
+        "fertility",
+        "menopause",
+        "neurodiversity",
+        "lgbtqia",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/Martina-Bador-.jpg",
+      "photo_alt": "",
+      "excerpt": "With over 18 years of experience as a therapist, Martina is a registered professional member of both the BACP and COSRT, offering specialist support as an Individual, Couples, and Psychosexual Therapist. She has worked extensively with diverse clients, including LGBTQIA+ communities and older couples, bringing sensitivity, inclusivity, and deep understanding to her practice.",
+      "content": [
+        "With over 18 years of experience as a therapist, Martina is a registered professional member of both the BACP and COSRT, offering specialist support as an Individual, Couples, and Psychosexual Therapist. She has worked extensively with diverse clients, including LGBTQIA+ communities and older couples, bringing sensitivity, inclusivity, and deep understanding to her practice.",
+        "Known for her warm, approachable, and deeply relational style, she creates a safe, non-judgmental space where clients feel heard, supported, and empowered. She specialises in relationship therapy, helping individuals and couples who are experiencing challenges such as communication difficulties, affairs and infidelity, intimacy concerns, and emotional disconnection.",
+        "Her expertise also extends to physical and sexual health, mental wellbeing, menopause and perimenopause, as well as anxiety and depression. She integrates clinical knowledge with genuine human connection, supporting meaningful and lasting change.",
+        "Online therapy appointments are available, offering flexible and accessible support"
+      ],
+      "source": "https://www.leonecentre.com/associates/martina-bador/"
+    },
+    {
+      "name": "Cristina Lorefice",
+      "slug": "cristina-lorefice",
+      "menu_order": 8,
+      "role": "Individual and Couples Therapist",
+      "years": 15,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "10623829"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "addiction",
+        "eating-disorders",
+        "neurodiversity",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English",
+        "Italian"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2024/09/Untitled-design-after-2.jpg",
+      "photo_alt": "Individual and Couples Therapist",
+      "excerpt": "Inspirational and highly experienced Individual and Couples Therapist, BACP accredited, with over 15 years’ professional practice. Highly experienced in Mindfulness-Based Cognitive Therapy (MBCT) and Solution-Focused Brief Therapy (SFBT). Cristina is also a motivational speaker, interviewer, author, and a seasoned clinical practitioner.",
+      "content": [
+        "Inspirational and highly experienced Individual and Couples Therapist, BACP accredited, with over 15 years’ professional practice. Highly experienced in Mindfulness-Based Cognitive Therapy (MBCT) and Solution-Focused Brief Therapy (SFBT). Cristina is also a motivational speaker, interviewer, author, and a seasoned clinical practitioner.",
+        "Cristina has worked within a wide range of professional settings across the UK, USA, Italy, Austria, and Nigeria. She is widely respected for her thoughtful, compassionate, and insightful approach, supporting clients with relationship challenges, loss of connection and intimacy, communication difficulties, cheating and infidelity, depression and low mood, anxiety, eating disorders, anger management, divorce, and separation. Cristina skilfully holds space for clients’ lived experiences while gently guiding them towards meaningful growth and change.",
+        "Her integrative, adaptable, and sensitive approach combines deep therapeutic exploration with practical, solution-oriented coaching.",
+        "Online sessions available in English and Italian."
+      ],
+      "source": "https://www.leonecentre.com/associates/cristina-lorefice/"
+    },
+    {
+      "name": "Susan Harris",
+      "slug": "susan-harris",
+      "menu_order": 9,
+      "role": "Couples and Family Therapist",
+      "years": 30,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "belgravia"
+      ],
+      "calendars": {
+        "online": "12959811",
+        "fulham": "12954163",
+        "belgravia": "12954086"
+      },
+      "services": [
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "self-harm",
+        "parenting",
+        "perinatal",
+        "life-transitions",
+        "neurodiversity",
+        "lgbtqia"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/11/Susan-Harris.png",
+      "photo_alt": "Susan Harris, Couples and Family therapist at Leone Centre",
+      "excerpt": "Susan Harris is a highly experienced Family and Couple Systemic Psychotherapist with over 30 years’ experience working across the NHS and social care. Susan Harris is UKCP-registered and trained in a range of evidence-based systemic and attachment-based approaches, including Emotionally Focused Therapy (EFT) and Narrative Therapy.",
+      "content": [
+        "Susan Harris is a highly experienced Family and Couple Systemic Psychotherapist with over 30 years’ experience working across the NHS and social care. Susan Harris is UKCP-registered and trained in a range of evidence-based systemic and attachment-based approaches, including Emotionally Focused Therapy (EFT) and Narrative Therapy.",
+        "She holds an MSc in Family and Systemic Psychotherapy and an Externship in Emotionally Focused Couples Therapy, with additional qualifications from King’s College London, The Tavistock Clinic, and University College London.",
+        "Susan’s style is collaborative, warm, and reflective. She works with couples and families to improve communication and strengthen relationships. She has particular expertise in perinatal and postnatal mental health, relationship difficulties, anxiety and low mood, neurodiversity, and gender identity questioning.",
+        "Experienced in working with heterosexual and same-sex couples, and affirming of diverse cultural, gender and sexual identities.",
+        "Susan offers couples’ and family therapy in person in Fulham, Belgravia and online."
+      ],
+      "source": "https://www.leonecentre.com/associates/susan-harris/"
+    },
+    {
+      "name": "Valerie Northcote",
+      "slug": "valerie-northcote",
+      "menu_order": 10,
+      "role": "Individual, Couples, and EMDR Therapist",
+      "years": 20,
+      "accreditations": [
+        "BACP",
+        "COSRT",
+        "EMDR UK"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "13265582"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "emdr",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "addiction",
+        "parenting",
+        "bereavement",
+        "life-transitions",
+        "neurodiversity",
+        "lgbtqia",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/12/Background-9.png",
+      "photo_alt": "Valerie Northcote Psychosexual couples therapist at Leone Centre",
+      "excerpt": "With over 20 years of experience and a warm, grounded relational style, Valerie is an MBACP- and COSRT-accredited Psychosexual and Relationship Therapist, EMDR Practitioner, Addiction Counsellor, and Clinical Supervisor. She works with individuals and couples experiencing sexual issues, relationship challenges, and the emotional impact of trauma, infidelity, or compulsive sexual behaviours.",
+      "content": [
+        "With over 20 years of experience and a warm, grounded relational style, Valerie is an MBACP- and COSRT-accredited Psychosexual and Relationship Therapist, EMDR Practitioner, Addiction Counsellor, and Clinical Supervisor. She works with individuals and couples experiencing sexual issues, relationship challenges, and the emotional impact of trauma, infidelity, or compulsive sexual behaviours.",
+        "Valerie’s work is integrative and responsive, drawing on Humanistic, Psychodynamic, Systemic, and Trauma-Focused approaches. She offers a thoughtful, non-judgemental space to explore sexual wellbeing, intimacy, emotional connection, and self-worth. With specialist training in psychosexual therapy, sex addiction, and EMDR, she supports clients in understanding the roots of their difficulties and moving towards healthier, more fulfilling relationships.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/valerie-northcote/"
+    },
+    {
+      "name": "William Conant",
+      "slug": "william-conant",
+      "menu_order": 11,
+      "role": "Individual, Couples and Psychosexual Therapist",
+      "years": 18,
+      "accreditations": [
+        "BACP",
+        "COSRT"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "wimbledon"
+      ],
+      "calendars": {
+        "online": "3825020",
+        "fulham": "5281857",
+        "wimbledon": "10218503"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "addiction",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "lgbtqia",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/William-Conant.jpg",
+      "photo_alt": "",
+      "excerpt": "William is a highly experienced Integrative Therapist with over 18 years of experience, known for his warm, knowledgeable, understanding and relatable approach. As a professional member of BACP and COSRT, he specialises in working with individuals and couples on a range of issues, including anxiety, depression, low self-esteem, stress, addiction, psychosexual difficulties, intimacy and communication challenges, relationship ambivalence, fertility and IVF, infidelity and betrayal, “quiet quitting”, and work-related issues.",
+      "content": [
+        "William is a highly experienced Integrative Therapist with over 18 years of experience, known for his warm, knowledgeable, understanding and relatable approach. As a professional member of BACP and COSRT, he specialises in working with individuals and couples on a range of issues, including anxiety, depression, low self-esteem, stress, addiction, psychosexual difficulties, intimacy and communication challenges, relationship ambivalence, fertility and IVF, infidelity and betrayal, “quiet quitting”, and work-related issues.",
+        "William is passionate about supporting couples whose relationships have been impacted by illness, offering sensitive guidance during difficult times.",
+        "William provides a safe, supportive space where clients can explore their challenges and work towards healing and reconnection, whether online or in person."
+      ],
+      "source": "https://www.leonecentre.com/associates/william-conant/"
+    },
+    {
+      "name": "Stelios Christodoulou",
+      "slug": "stelios-christodoulou",
+      "menu_order": 12,
+      "role": "Individual & Couple Therapist",
+      "years": 25,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online",
+        "fulham"
+      ],
+      "calendars": {
+        "online": "3825001",
+        "fulham": "3822299"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "addiction",
+        "bereavement",
+        "life-transitions",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/Stelios-Christodoulou.jpg",
+      "photo_alt": "",
+      "excerpt": "Stelios is one of the most experienced therapists around, bringing over 25 years of rich and well-developed clinical and supervisory practice to his work.",
+      "content": [
+        "Stelios is one of the most experienced therapists around, bringing over 25 years of rich and well-developed clinical and supervisory practice to his work.",
+        "A BACP-registered Counsellor and Psychotherapist trained in Gestalt and Emotionally Focused Therapy (EFT), he supports individuals and couples facing infidelity, emotional disconnection, grief, anxiety, addiction, depression and “quiet quitting” of relationships. With relational depth and practical insight, Stelios also works with workplace conflict, career strain and the challenges faced by expatriates.",
+        "Stelios brings a rare combination of clinical precision and intuitive quality to his work. Skilled in working with high-conflict dynamics, emotional disconnection and the deeper patterns that sit beneath surface issues, he supports clients in developing clearer communication, stronger boundaries and more secure relational bonds. His ability to hold complex emotional landscapes with steadiness and insight makes him a trusted therapist for individuals and couples seeking meaningful change.",
+        "Offering both in-person and online sessions, he provides flexible support shaped around each client’s unique context."
+      ],
+      "source": "https://www.leonecentre.com/associates/stelios-christodoulou/"
+    },
+    {
+      "name": "Olena Baeva",
+      "slug": "olena-baeva-couples-counsellor",
+      "menu_order": 13,
+      "role": "Individual and Couples / Marriage Counsellor",
+      "years": 20,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "4356208"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "communication-conflict",
+        "sex-intimacy",
+        "polyamory",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "parenting",
+        "bereavement",
+        "health-diagnosis",
+        "neurodiversity",
+        "lgbtqia"
+      ],
+      "languages": [
+        "English",
+        "Russian"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2025/01/Background-5.png",
+      "photo_alt": "Olena Baeva, Neurodiversity Therapy, Couples Therapist at Leone Centre Counselling",
+      "excerpt": "With over 20 years of experience, Olena is a BACP-registered counselling practitioner (BPsych MA CSAccred) and clinical supervisor, working with individuals, couples, thruples and other relationship constellations.",
+      "content": [
+        "With over 20 years of experience, Olena is a BACP-registered counselling practitioner (BPsych MA CSAccred) and clinical supervisor, working with individuals, couples, thruples and other relationship constellations.",
+        "Olena has a strong interest and specialism in helping those who are neurodivergent or a partner of a neurodivergent person. Working within the neuro-, gender, sexual and relationship diversity affirming framework, Olena’s approach is personalised, drawing from her extensive training in varied therapeutic modalities.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/olena-baeva-couples-counsellor/"
+    },
+    {
+      "name": "Julia Halpin",
+      "slug": "julia-halpin",
+      "menu_order": 14,
+      "role": "Family, Couples and Systemic Psychotherapist",
+      "years": 20,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "6962430"
+      },
+      "services": [
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-harm",
+        "parenting",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "neurodiversity"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/Julia-Halpin.jpg",
+      "photo_alt": "Julia Halpin, couples and family therapist",
+      "excerpt": "Family and Couples Therapist for over 20 years, including as a systemic Tavistock-trained Supervisor of Family Therapists. A professional member of UKCP and AFT, with 35+ years’ experience within the NHS and mental health.",
+      "content": [
+        "Family and Couples Therapist for over 20 years, including as a systemic Tavistock-trained Supervisor of Family Therapists. A professional member of UKCP and AFT, with 35+ years’ experience within the NHS and mental health.",
+        "Extensively skilled with supporting couples and families, parents/ step-parents/ carers with relationships and children. Supports with anxiety, depression, conflict, self-harm, separation, affairs and cheating, bereavement, illness, fertility issues, trauma, ASD and/or ADHD.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/julia-halpin/"
+    },
+    {
+      "name": "Linda Bower",
+      "slug": "linda-bower",
+      "menu_order": 15,
+      "role": "Individual, Couples and Psychosexual Therapist",
+      "years": null,
+      "accreditations": [
+        "UKCP",
+        "BACP",
+        "COSRT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "8642195"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "self-esteem",
+        "parenting",
+        "perinatal",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "lgbtqia",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/Linda-Bower.jpg",
+      "photo_alt": "",
+      "excerpt": "An experienced Therapist, Therapeutic Services Manager and Trainer with a 25-year career in both the NHS and private practice. An accomplished Individual, Couples, and Psychosexual Therapist, holding Master’s Degrees in Integrative Psychotherapy and Contemporary Psychosexual Therapy.",
+      "content": [
+        "An experienced Therapist, Therapeutic Services Manager and Trainer with a 25-year career in both the NHS and private practice. An accomplished Individual, Couples, and Psychosexual Therapist, holding Master’s Degrees in Integrative Psychotherapy and Contemporary Psychosexual Therapy.",
+        "Professional member of UKCP, COSRT, and BACP.",
+        "Gender, Sexual and Relationship Diversity (GSRD)-aware therapist, supporting individuals and couples with challenges including grief, conflict, affairs and cheating, communication hurdles, emotional/ sexual intimacy, fertility and IVF.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/linda-bower/"
+    },
+    {
+      "name": "Louanne Martin",
+      "slug": "louanne-martin",
+      "menu_order": 16,
+      "role": "Individual & Couples Therapist",
+      "years": 15,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "8609513"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "addiction",
+        "eating-disorders",
+        "self-harm",
+        "parenting",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/Louanne-Martin.jpg",
+      "photo_alt": "",
+      "excerpt": "As an Advanced Individual and Couples Therapist Supervisor, Practice Lead, Clinical Consultant, and therapist writer, Louanne is a highly experienced relational therapist with over 15 years of practice.",
+      "content": [
+        "As an Advanced Individual and Couples Therapist Supervisor, Practice Lead, Clinical Consultant, and therapist writer, Louanne is a highly experienced relational therapist with over 15 years of practice.",
+        "As a member of the British Association for Counselling and Psychotherapy (BACP), she has an extensive background in supporting clients with a variety of challenges, including communication issues, the impact of parenting, relationships affected by infidelity, divorce, estrangement, bereavement, sexual abuse, eating disorders, self-harm, fertility issues, and addiction. Louanne also provides support for individuals facing illness and diagnosis-related challenges.",
+        "Offering online appointments."
+      ],
+      "source": "https://www.leonecentre.com/associates/louanne-martin/"
+    },
+    {
+      "name": "Alison Wragg",
+      "slug": "alison-wragg",
+      "menu_order": 17,
+      "role": "Founder - Director - Organisational Consultant, Individual/Couple Therapist & Certified MBTI Practitioner",
+      "years": 30,
+      "accreditations": [
+        "BACP",
+        "HCPC"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "belgravia"
+      ],
+      "calendars": {
+        "online": "3824927",
+        "fulham": "https://leonecentre.as.me/alison-wragg-19",
+        "belgravia": "10158772"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative",
+        "organisational"
+      ],
+      "issues": [
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "self-esteem",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2020/06/LC-Enhanced-Therapist-Images6.jpg",
+      "photo_alt": "",
+      "excerpt": "Founder and Lead Consultant of Leone Centre’s Corporate and Consultancy Services, Alison brings specialist experience in work culture, relational intelligence. Works with individuals, couples, and organisations. She helps with complex workplace dynamics, leadership challenges, executive coaching, and organisational consultancy.",
+      "content": [
+        "Founder and Lead Consultant of Leone Centre’s Corporate and Consultancy Services, Alison brings specialist experience in work culture, relational intelligence. Works with individuals, couples, and organisations. She helps with complex workplace dynamics, leadership challenges, executive coaching, and organisational consultancy.",
+        "With a rich background as a Therapist, Organisational Development Consultant, Trainer, Associate Director, Lead Lecturer, and Facilitator, Alison combines clinical depth with strategic insight.",
+        "She offers both online and in-person consultancy, creating a space where personal, professional, and relational growth can take place."
+      ],
+      "source": "https://www.leonecentre.com/associates/alison-wragg/"
+    },
+    {
+      "name": "Cristina Vrech",
+      "slug": "cristina-vrech",
+      "menu_order": 18,
+      "role": "Founder and Director - Individual & Couple Therapist, Supervisor, Corporate Services",
+      "years": 20,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online",
+        "fulham"
+      ],
+      "calendars": {
+        "online": "3824982",
+        "fulham": "3776264"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative",
+        "organisational"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "addiction",
+        "parenting",
+        "fertility",
+        "bereavement",
+        "life-transitions"
+      ],
+      "languages": [
+        "English",
+        "Italian"
+      ],
+      "photo": "https://www.leonecentre.com/wp-content/uploads/2023/07/Cristina-Vrech.jpg",
+      "photo_alt": "",
+      "excerpt": "Founder and director of Leone Centre, Cristina Vrech, has 20+ years of experience in working and supporting people, 14+ years of extensive experience as a therapist and offers valuable knowledge to individuals and couples. Prior to being a therapist, she worked in the financial sector.",
+      "content": [
+        "Founder and director of Leone Centre, Cristina Vrech, has 20+ years of experience in working and supporting people, 14+ years of extensive experience as a therapist and offers valuable knowledge to individuals and couples. Prior to being a therapist, she worked in the financial sector.",
+        "Cristina takes a down-to-earth and direct approach across the landscapes of relationships, communication, stress, infidelity, confidence, loneliness, addiction, separation and divorce, IVF, and anxiety.",
+        "Offering Online Counselling and in person counselling."
+      ],
+      "source": "https://www.leonecentre.com/associates/cristina-vrech/"
+    }
+  ]
+}

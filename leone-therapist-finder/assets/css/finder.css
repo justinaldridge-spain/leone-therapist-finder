@@ -1,0 +1,676 @@
+/**
+ * Leone Therapist Finder.
+ * Everything is scoped under .ltf so theme list/button styles do not leak in. Fonts are
+ * inherited from the theme. Colours are CSS custom properties (the accent is set from the
+ * plugin settings as an inline style on .ltf).
+ */
+
+.ltf {
+	--ltf-accent: #2cb2b2;
+	--ltf-accent-strong: #1e7979;
+	--ltf-accent-soft: #e9f7f7;
+	--ltf-text: #2a2a2a;
+	--ltf-muted: #5e5e5e;
+	--ltf-border: #e3e3e0;
+	--ltf-surface: #fff;
+	--ltf-surface-alt: #f5f5f2;
+	--ltf-radius: 14px;
+	--ltf-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 6px 18px rgba(0, 0, 0, 0.05);
+
+	color: var(--ltf-text);
+	margin: 0 0 2rem;
+}
+
+.ltf *,
+.ltf *::before,
+.ltf *::after {
+	box-sizing: border-box;
+}
+
+.ltf [hidden] {
+	display: none !important;
+}
+
+.ltf .ltf-icon {
+	flex: 0 0 auto;
+	width: 1em;
+	height: 1em;
+}
+
+.ltf .ltf-sr {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip: rect(0, 0, 0, 0);
+	white-space: nowrap;
+	border: 0;
+}
+
+.ltf .ltf__title {
+	margin: 0 0 1rem;
+}
+
+/* ---------- Filters ---------- */
+
+.ltf .ltf-filters {
+	display: grid;
+	gap: 18px;
+	margin: 0 0 18px;
+	padding: 22px;
+	background: var(--ltf-surface-alt);
+	border-radius: var(--ltf-radius);
+}
+
+.ltf .ltf-filter {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	min-width: 0;
+}
+
+.ltf .ltf-filter__label {
+	display: block;
+	float: none;
+	width: auto;
+	margin: 0 0 8px;
+	padding: 0;
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.3;
+	color: var(--ltf-text);
+}
+
+.ltf .ltf-pills {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+}
+
+.ltf .ltf-pill {
+	position: relative;
+	display: inline-flex;
+	margin: 0;
+	cursor: pointer;
+}
+
+.ltf .ltf-pill__input {
+	position: absolute;
+	opacity: 0;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+}
+
+.ltf .ltf-pill__body {
+	display: inline-flex;
+	align-items: center;
+	gap: 7px;
+	min-height: 42px;
+	padding: 8px 15px;
+	font-size: 0.95rem;
+	line-height: 1.2;
+	color: var(--ltf-text);
+	background: var(--ltf-surface);
+	border: 1px solid var(--ltf-border);
+	border-radius: 999px;
+	transition: background-color 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.ltf .ltf-pill:hover .ltf-pill__body {
+	border-color: var(--ltf-accent);
+}
+
+.ltf .ltf-pill__count {
+	font-size: 0.8em;
+	font-variant-numeric: tabular-nums;
+	color: var(--ltf-muted);
+}
+
+.ltf .ltf-pill__count:empty {
+	display: none;
+}
+
+.ltf .ltf-pill__input:checked + .ltf-pill__body {
+	color: #fff;
+	background: var(--ltf-accent-strong);
+	border-color: var(--ltf-accent-strong);
+}
+
+.ltf .ltf-pill__input:checked + .ltf-pill__body .ltf-pill__count {
+	color: rgba(255, 255, 255, 0.85);
+}
+
+.ltf .ltf-pill__input:focus-visible + .ltf-pill__body {
+	outline: 3px solid var(--ltf-accent);
+	outline-offset: 2px;
+}
+
+.ltf .ltf-pill.is-disabled {
+	cursor: not-allowed;
+}
+
+.ltf .ltf-pill.is-disabled .ltf-pill__body {
+	opacity: 0.45;
+}
+
+.ltf .ltf-filter-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 210px), 1fr));
+	gap: 16px;
+}
+
+.ltf .ltf-select,
+.ltf .ltf-input {
+	display: block;
+	width: 100%;
+	min-height: 46px;
+	margin: 0;
+	padding: 10px 14px;
+	font: inherit;
+	font-size: 1rem;
+	line-height: 1.3;
+	color: var(--ltf-text);
+	background-color: var(--ltf-surface);
+	border: 1px solid var(--ltf-border);
+	border-radius: 10px;
+	box-shadow: none;
+}
+
+.ltf .ltf-select {
+	padding-right: 38px;
+	appearance: none;
+	-webkit-appearance: none;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1.5 6 6.5l5-5' fill='none' stroke='%235e5e5e' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+	background-repeat: no-repeat;
+	background-position: right 14px center;
+	cursor: pointer;
+}
+
+.ltf .ltf-select:focus-visible,
+.ltf .ltf-input:focus-visible {
+	outline: 3px solid var(--ltf-accent);
+	outline-offset: 1px;
+	border-color: var(--ltf-accent-strong);
+}
+
+.ltf--js .ltf-filters__submit {
+	display: none;
+}
+
+/* Phones: keep location + issue up front, tuck the rest behind "More filters". */
+.ltf .ltf-filters__toggle {
+	display: none;
+	justify-self: start;
+	margin: -4px 0 0;
+	padding: 4px 0;
+	font: inherit;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: var(--ltf-accent-strong);
+	text-decoration: underline;
+	background: none;
+	border: 0;
+	cursor: pointer;
+}
+
+@media (max-width: 600px) {
+	.ltf--js .ltf-filters__toggle {
+		display: inline-block;
+	}
+
+	.ltf--js .ltf-filters:not(.is-expanded) .ltf-filter--secondary {
+		display: none;
+	}
+}
+
+/* ---------- Status ---------- */
+
+.ltf .ltf-status {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 6px 16px;
+	margin: 0 0 16px;
+}
+
+.ltf .ltf-status__text {
+	margin: 0;
+	font-weight: 600;
+	color: var(--ltf-text);
+}
+
+.ltf .ltf-status__reset {
+	font-size: 0.95rem;
+	color: var(--ltf-accent-strong);
+}
+
+/* ---------- Results ---------- */
+
+.ltf .ltf-results {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+	gap: 20px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ltf .ltf-card {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ltf .ltf-card::before,
+.ltf .ltf-card::marker {
+	content: none;
+}
+
+.ltf .ltf-card__inner {
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+	height: 100%;
+	padding: 22px;
+	background: var(--ltf-surface);
+	border: 1px solid var(--ltf-border);
+	border-radius: var(--ltf-radius);
+	box-shadow: var(--ltf-shadow);
+}
+
+.ltf .ltf-card__header {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.ltf .ltf-card__media {
+	display: grid;
+	place-items: center;
+	flex: 0 0 auto;
+	width: 88px;
+	height: 88px;
+	overflow: hidden;
+	background: var(--ltf-accent-soft);
+	border-radius: 50%;
+	text-decoration: none;
+}
+
+.ltf .ltf-card__photo {
+	display: block;
+	width: 100%;
+	height: 100%;
+	max-width: none;
+	margin: 0;
+	object-fit: cover;
+	border-radius: 0;
+}
+
+.ltf .ltf-card__initials {
+	font-size: 1.6rem;
+	font-weight: 600;
+	color: var(--ltf-accent-strong);
+}
+
+.ltf .ltf-card__heading {
+	min-width: 0;
+}
+
+.ltf .ltf-card__name {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2rem;
+	line-height: 1.25;
+}
+
+.ltf .ltf-card__name a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.ltf .ltf-card__name a:hover,
+.ltf .ltf-card__name a:focus-visible {
+	color: var(--ltf-accent-strong);
+	text-decoration: underline;
+}
+
+.ltf .ltf-card__role {
+	margin: 3px 0 0;
+	font-size: 0.92rem;
+	line-height: 1.35;
+	color: var(--ltf-muted);
+}
+
+.ltf .ltf-card__meta {
+	margin: 5px 0 0;
+	font-size: 0.8rem;
+	font-weight: 600;
+	line-height: 1.35;
+	letter-spacing: 0.01em;
+	color: var(--ltf-accent-strong);
+}
+
+.ltf .ltf-card__locations,
+.ltf .ltf-chips {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ltf .ltf-card__locations li,
+.ltf .ltf-chips li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ltf .ltf-card__locations li::before,
+.ltf .ltf-chips li::before {
+	content: none;
+}
+
+.ltf .ltf-card__locations .ltf-loc {
+	display: inline-flex;
+	align-items: center;
+	gap: 5px;
+	padding: 4px 10px;
+	font-size: 0.82rem;
+	line-height: 1.3;
+	color: var(--ltf-text);
+	background: var(--ltf-surface-alt);
+	border-radius: 999px;
+}
+
+.ltf .ltf-card__locations .ltf-loc.is-match {
+	font-weight: 600;
+	color: var(--ltf-accent-strong);
+	background: var(--ltf-accent-soft);
+	box-shadow: inset 0 0 0 1px var(--ltf-accent);
+}
+
+.ltf .ltf-card__summary {
+	display: -webkit-box;
+	margin: 0;
+	overflow: hidden;
+	font-size: 0.93rem;
+	line-height: 1.55;
+	color: var(--ltf-text);
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.ltf .ltf-card__issues-label {
+	margin: 0 0 7px;
+	font-size: 0.75rem;
+	font-weight: 600;
+	letter-spacing: 0.07em;
+	text-transform: uppercase;
+	color: var(--ltf-muted);
+}
+
+.ltf .ltf-chip {
+	display: inline-block;
+	padding: 4px 11px;
+	font-size: 0.82rem;
+	line-height: 1.35;
+	color: var(--ltf-text);
+	text-decoration: none;
+	background: var(--ltf-surface);
+	border: 1px solid var(--ltf-border);
+	border-radius: 999px;
+	transition: border-color 0.15s, color 0.15s;
+}
+
+.ltf a.ltf-chip:hover,
+.ltf a.ltf-chip:focus-visible {
+	color: var(--ltf-accent-strong);
+	border-color: var(--ltf-accent);
+}
+
+.ltf .ltf-chip-item.is-match .ltf-chip {
+	font-weight: 600;
+	color: var(--ltf-accent-strong);
+	background: var(--ltf-accent-soft);
+	border-color: var(--ltf-accent);
+}
+
+.ltf .ltf-more {
+	display: inline-block;
+	margin-top: 8px;
+	font-size: 0.85rem;
+	color: var(--ltf-accent-strong);
+	cursor: pointer;
+}
+
+.ltf .ltf-card__actions {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 10px;
+	margin-top: auto;
+	padding-top: 16px;
+	border-top: 1px solid var(--ltf-border);
+}
+
+/* ---------- Buttons ---------- */
+
+.ltf .ltf-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 7px;
+	min-height: 44px;
+	margin: 0;
+	padding: 10px 18px;
+	font: inherit;
+	font-size: 0.95rem;
+	font-weight: 600;
+	line-height: 1.2;
+	text-align: center;
+	text-decoration: none;
+	text-transform: none;
+	letter-spacing: normal;
+	cursor: pointer;
+	border: 1px solid transparent;
+	border-radius: 999px;
+	box-shadow: none;
+	transition: background-color 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.ltf .ltf-btn--primary {
+	color: #fff;
+	background: var(--ltf-accent-strong);
+	border-color: var(--ltf-accent-strong);
+}
+
+.ltf .ltf-btn--primary:hover,
+.ltf .ltf-btn--primary:focus-visible {
+	color: #fff;
+	background: var(--ltf-text);
+	border-color: var(--ltf-text);
+}
+
+.ltf .ltf-btn--ghost {
+	color: var(--ltf-accent-strong);
+	background: transparent;
+	border-color: currentColor;
+}
+
+.ltf .ltf-btn--ghost:hover,
+.ltf .ltf-btn--ghost:focus-visible {
+	color: var(--ltf-accent-strong);
+	background: var(--ltf-accent-soft);
+}
+
+.ltf .ltf-btn:focus-visible {
+	outline: 3px solid var(--ltf-accent);
+	outline-offset: 2px;
+}
+
+/* "Book a session" menu for therapists who work in more than one place. */
+
+.ltf .ltf-book {
+	position: relative;
+}
+
+.ltf .ltf-book-menu {
+	position: relative;
+}
+
+.ltf .ltf-book-menu > summary {
+	list-style: none;
+}
+
+.ltf .ltf-book-menu > summary::-webkit-details-marker {
+	display: none;
+}
+
+.ltf .ltf-book-menu > summary::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	margin: -3px 0 0 2px;
+	border-right: 2px solid currentColor;
+	border-bottom: 2px solid currentColor;
+	transform: rotate(45deg);
+	transition: transform 0.15s;
+}
+
+.ltf .ltf-book-menu[open] > summary::after {
+	margin-top: 4px;
+	transform: rotate(-135deg);
+}
+
+.ltf .ltf-book-menu__list {
+	position: absolute;
+	top: calc(100% + 8px);
+	right: 0;
+	z-index: 20;
+	min-width: 210px;
+	margin: 0;
+	padding: 6px;
+	list-style: none;
+	background: var(--ltf-surface);
+	border: 1px solid var(--ltf-border);
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.14);
+}
+
+.ltf .ltf-book-menu__list li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ltf .ltf-book-menu__list li::before {
+	content: none;
+}
+
+.ltf .ltf-book-menu__link {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	padding: 11px 12px;
+	font-size: 0.95rem;
+	color: var(--ltf-text);
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+.ltf .ltf-book-menu__link .ltf-icon {
+	color: var(--ltf-accent-strong);
+}
+
+.ltf .ltf-book-menu__link:hover,
+.ltf .ltf-book-menu__link:focus-visible {
+	color: var(--ltf-accent-strong);
+	background: var(--ltf-accent-soft);
+}
+
+/* ---------- Empty state and help ---------- */
+
+.ltf .ltf-empty {
+	padding: 36px 24px;
+	text-align: center;
+	border: 1px dashed var(--ltf-border);
+	border-radius: var(--ltf-radius);
+}
+
+.ltf .ltf-empty__title {
+	margin: 0 0 6px;
+	font-size: 1.1rem;
+	font-weight: 600;
+}
+
+.ltf .ltf-empty__hint {
+	margin: 0 0 16px;
+	color: var(--ltf-muted);
+}
+
+.ltf .ltf-empty__actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 10px;
+}
+
+.ltf .ltf-help {
+	margin-top: 28px;
+	padding: 22px 26px;
+	background: var(--ltf-accent-soft);
+	border-left: 4px solid var(--ltf-accent);
+	border-radius: var(--ltf-radius);
+}
+
+.ltf .ltf-help__title {
+	margin: 0 0 6px;
+	font-size: 1.1rem;
+}
+
+.ltf .ltf-help__text p {
+	margin: 0;
+}
+
+.ltf .ltf-help__text a {
+	color: var(--ltf-accent-strong);
+	font-weight: 600;
+}
+
+@media (max-width: 600px) {
+	.ltf .ltf-filters {
+		padding: 16px;
+	}
+
+	.ltf .ltf-card__inner {
+		padding: 18px;
+	}
+
+	.ltf .ltf-card__media {
+		width: 72px;
+		height: 72px;
+	}
+
+	.ltf .ltf-card__actions .ltf-btn,
+	.ltf .ltf-card__actions .ltf-book,
+	.ltf .ltf-card__actions .ltf-book-menu {
+		flex: 1 1 auto;
+	}
+
+	.ltf .ltf-card__actions .ltf-book-menu > summary {
+		width: 100%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.ltf * {
+		transition: none !important;
+	}
+}
