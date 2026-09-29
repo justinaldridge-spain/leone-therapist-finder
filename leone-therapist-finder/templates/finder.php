@@ -24,7 +24,7 @@ $filtered = '' !== $ctx['query'] || array_filter( $state );
 $secondary = array_intersect( array( 'language' ), array_keys( $options ) );
 $has_more  = $secondary || $ctx['has_search'];
 ?>
-<div class="ltf" id="<?php echo esc_attr( $uid ); ?>" data-ltf style="<?php echo esc_attr( $ctx['accent'] ); ?>">
+<div class="ltf <?php echo esc_attr( $ctx['width']['class'] ); ?>" id="<?php echo esc_attr( $uid ); ?>" data-ltf style="<?php echo esc_attr( $ctx['accent'] . $ctx['width']['vars'] ); ?>">
 
 	<?php if ( '' !== $ctx['title'] ) : ?>
 		<h2 class="ltf__title"><?php echo esc_html( $ctx['title'] ); ?></h2>
@@ -125,12 +125,12 @@ $has_more  = $secondary || $ctx['has_search'];
 	</div>
 
 	<?php if ( $ctx['show_help'] && '' !== trim( (string) $settings['help_text'] ) ) : ?>
-		<aside class="ltf-help">
+		<div class="ltf-help">
 			<?php if ( '' !== $settings['help_title'] ) : ?>
 				<h3 class="ltf-help__title"><?php echo esc_html( $settings['help_title'] ); ?></h3>
 			<?php endif; ?>
 			<div class="ltf-help__text"><?php echo wp_kses_post( wpautop( $settings['help_text'] ) ); ?></div>
-		</aside>
+		</div>
 	<?php endif; ?>
 
 	<script type="application/json" class="ltf-config"><?php echo wp_json_encode( $ctx['js_config'], JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT ); ?></script>

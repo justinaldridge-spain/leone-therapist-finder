@@ -88,11 +88,24 @@
 			}
 
 			root.classList.add( 'ltf--js' );
+			this.alignWide();
 			this.bind();
 			this.state = this.readState();
 			// Phones fold secondary filters away; open them if one is already in use (e.g. a shared link).
 			this.toggleFilters( !! ( this.state.language || this.state.q ) );
 			this.update( false );
+		}
+
+		// width="wide"/"full": keep the finder centred on the screen even when the theme's content
+		// column is off to one side.
+		alignWide() {
+			if ( ! this.root.classList.contains( 'ltf--wide' ) || ! this.root.parentElement ) {
+				return;
+			}
+			this.root.style.setProperty( '--ltf-wide-shift', '0px' );
+			const parent = this.root.parentElement.getBoundingClientRect();
+			const shift = document.documentElement.clientWidth / 2 - ( parent.left + parent.width / 2 );
+			this.root.style.setProperty( '--ltf-wide-shift', Math.round( shift ) + 'px' );
 		}
 
 		toggleFilters( open ) {
@@ -182,6 +195,12 @@
 					const card = this.cards.find( ( c ) => c.el.contains( book ) );
 					this.track( 'book', { therapist: card ? card.name : '', location: book.dataset.ltfBookLink } );
 				}
+			} );
+
+			let resizeTimer;
+			window.addEventListener( 'resize', () => {
+				clearTimeout( resizeTimer );
+				resizeTimer = setTimeout( () => this.alignWide(), 150 );
 			} );
 
 			// Close any open "Book a session" menu when clicking elsewhere or pressing Escape.

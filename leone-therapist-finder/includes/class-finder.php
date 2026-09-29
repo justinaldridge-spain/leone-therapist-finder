@@ -80,6 +80,7 @@ final class Finder {
 				'language' => '',
 				'filters'  => implode( ',', self::CONTROLS ),
 				'order'    => 'default',
+				'width'    => '',
 				'title'    => '',
 				'help'     => 'yes',
 				'url'      => 'yes',
@@ -150,6 +151,7 @@ final class Finder {
 
 		$context = array(
 			'uid'              => 'ltf-' . self::$instances,
+			'width'            => self::width_style( (string) $atts['width'] ),
 			'title'            => $atts['title'],
 			'show_help'        => 'no' !== $atts['help'],
 			'settings'         => $settings,
@@ -540,6 +542,35 @@ final class Finder {
 			'removeFilter' => __( 'Remove “%1$s” (%2$d)', 'leone-therapist-finder' ),
 			/* translators: 1: search text, 2: number of therapists if cleared. */
 			'clearSearch'  => __( 'Clear search “%1$s” (%2$d)', 'leone-therapist-finder' ),
+		);
+	}
+
+	/**
+	 * width="" (default, follow the theme) | "wide" (up to 1200px) | "full" (edge to edge) | a
+	 * number of pixels. Returns the class and custom property for the wrapper.
+	 */
+	private static function width_style( string $width ): array {
+		$width = strtolower( trim( $width ) );
+
+		if ( '' === $width || 'auto' === $width || 'theme' === $width ) {
+			return array(
+				'class' => '',
+				'vars'  => '',
+			);
+		}
+
+		if ( 'full' === $width ) {
+			$max = '100vw';
+		} elseif ( 'wide' === $width ) {
+			$max = '1200px';
+		} else {
+			$pixels = absint( $width );
+			$max    = $pixels ? min( 3000, max( 320, $pixels ) ) . 'px' : '1200px';
+		}
+
+		return array(
+			'class' => 'ltf--wide',
+			'vars'  => '--ltf-wide-max:' . $max . ';',
 		);
 	}
 

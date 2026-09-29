@@ -1,7 +1,7 @@
 === Leone Therapist Finder ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 0.2.0
+Stable tag: 0.3.0
 License: GPLv2 or later
 
 Filterable therapist directory for the Leone Centre, with Acuity Scheduling booking links.
@@ -36,6 +36,9 @@ Attributes:
 * `filters` – controls to show. Default: `location,issue,service,language,search`, minus any
   facet fixed above.
 * `order` – `default` (menu order), `name`, or `random` (shuffled in the browser each visit).
+* `width` – by default the finder fits the page's content column. `wide` lets it step outside a
+  narrow column (up to 1200px), `full` uses the whole screen width, or give a number of pixels
+  e.g. `width="1000"`. It is centred on the screen and never causes sideways scrolling.
 * `title` – optional heading. `help="no"` hides the help box. `url="no"` stops syncing filters to the URL.
 
 Examples:
@@ -46,6 +49,15 @@ Examples:
     Start on Fulham, changeable: [therapist_finder location="fulham" filters="location,issue,service,search"]
 
 A shortcode builder is under Therapists > Finder settings.
+
+== Fitting into a theme ==
+
+Styles are scoped to `.ltf` and inherit the theme's fonts. The plugin also neutralises the
+content styling themes commonly apply to lists, labels and headings (borders, backgrounds,
+columns, uppercase), and deliberately avoids `<header>`, `<footer>` and `<aside>` elements,
+which themes often style or script as the site header and footer.
+
+If the page template is narrow, use the `width` attribute rather than a wide template.
 
 == Developer hooks ==
 

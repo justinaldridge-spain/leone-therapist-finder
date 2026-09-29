@@ -43,7 +43,8 @@ $meta = array_merge( $meta, $t['accreditations'] );
 	data-name="<?php echo esc_attr( $t['name'] ); ?>"
 	<?php echo $t['visible'] ? '' : 'hidden'; ?>>
 	<article class="ltf-card__inner">
-		<header class="ltf-card__header">
+		<?php /* Plain <div>s on purpose: themes commonly style (or script) <header>/<footer>/<aside> as the site header and footer. */ ?>
+		<div class="ltf-card__header">
 			<a class="ltf-card__media" href="<?php echo esc_url( $t['url'] ); ?>" tabindex="-1" aria-hidden="true">
 				<?php echo $t['photo']; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Core image markup / escaped initials. ?>
 			</a>
@@ -56,7 +57,7 @@ $meta = array_merge( $meta, $t['accreditations'] );
 					<p class="ltf-card__meta"><?php echo esc_html( implode( ' · ', $meta ) ); ?></p>
 				<?php endif; ?>
 			</div>
-		</header>
+		</div>
 
 		<?php if ( $t['facets']['location'] ) : ?>
 			<ul class="ltf-card__locations" aria-label="<?php esc_attr_e( 'Sees clients', 'leone-therapist-finder' ); ?>">
@@ -100,11 +101,11 @@ $meta = array_merge( $meta, $t['accreditations'] );
 			</div>
 		<?php endif; ?>
 
-		<footer class="ltf-card__actions">
+		<div class="ltf-card__actions">
 			<a class="ltf-btn ltf-btn--ghost" href="<?php echo esc_url( $t['url'] ); ?>"><?php esc_html_e( 'View profile', 'leone-therapist-finder' ); ?><span class="screen-reader-text ltf-sr"> <?php echo esc_html( $t['name'] ); ?></span></a>
 			<div class="ltf-book" data-ltf-book>
 				<?php echo Finder::booking_html( $t, $active_location, $ctx['appointment_type'], (string) $ctx['settings']['contact_url'] ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- Escaped in booking_html(). ?>
 			</div>
-		</footer>
+		</div>
 	</article>
 </li>

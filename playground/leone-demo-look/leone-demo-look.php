@@ -52,6 +52,8 @@ add_action(
 	1
 );
 
+require_once __DIR__ . '/live-theme-preview.php';
+
 add_action(
 	'wp_enqueue_scripts',
 	static function () {

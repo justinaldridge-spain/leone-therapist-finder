@@ -55,6 +55,11 @@
 			attrs.push( `order="${ order.value }"` );
 		}
 
+		const width = builder.querySelector( '[data-ltf-width]' );
+		if ( width && width.value ) {
+			attrs.push( `width="${ width.value }"` );
+		}
+
 		output.value = `[therapist_finder${ attrs.length ? ' ' + attrs.join( ' ' ) : '' }]`;
 	};
 

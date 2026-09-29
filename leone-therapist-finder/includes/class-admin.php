@@ -568,6 +568,17 @@ final class Admin {
 					</td>
 				</tr>
 				<tr>
+					<th scope="row"><label for="ltf-builder-width"><?php esc_html_e( 'Width', 'leone-therapist-finder' ); ?></label></th>
+					<td>
+						<select id="ltf-builder-width" data-ltf-width>
+							<option value=""><?php esc_html_e( 'Follow the page (default)', 'leone-therapist-finder' ); ?></option>
+							<option value="wide"><?php esc_html_e( 'Wider than the page, up to 1200px', 'leone-therapist-finder' ); ?></option>
+							<option value="full"><?php esc_html_e( 'Full width of the screen', 'leone-therapist-finder' ); ?></option>
+						</select>
+						<p class="description"><?php esc_html_e( 'Use this when the page template is narrow and the cards look cramped.', 'leone-therapist-finder' ); ?></p>
+					</td>
+				</tr>
+				<tr>
 					<th scope="row"><label for="ltf-builder-output"><?php esc_html_e( 'Shortcode', 'leone-therapist-finder' ); ?></label></th>
 					<td>
 						<div class="ltf-builder__output">
