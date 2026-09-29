@@ -1,7 +1,7 @@
 === Leone Therapist Finder ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 0.4.0
+Stable tag: 0.5.0
 License: GPLv2 or later
 
 Filterable therapist directory for the Leone Centre, with Acuity Scheduling booking links.

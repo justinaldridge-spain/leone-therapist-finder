@@ -2,7 +2,7 @@
 /**
  * Plugin Name:       Leone Therapist Finder
  * Description:       Filterable therapist directory with Acuity Scheduling booking links. Add it to any page with the [therapist_finder] shortcode.
- * Version:           0.4.0
+ * Version:           0.5.0
  * Requires at least: 6.3
  * Requires PHP:      7.4
  * License:           GPL-2.0-or-later
@@ -16,7 +16,7 @@ namespace LeoneCentre\TherapistFinder;
 
 defined( 'ABSPATH' ) || exit;
 
-const VERSION     = '0.4.0';
+const VERSION     = '0.5.0';
 const PLUGIN_FILE = __FILE__;
 const PLUGIN_DIR  = __DIR__ . '/';
 

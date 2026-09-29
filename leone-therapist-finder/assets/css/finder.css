@@ -517,15 +517,35 @@
 	cursor: pointer;
 }
 
+/*
+ * The two buttons share the row and shrink to fit; in a narrow card (or a wordy clinic name)
+ * they wrap to a tidy full-width stack instead of leaving one hanging on its own line.
+ */
 .ltf .ltf-card__actions {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
-	gap: 10px;
+	gap: 8px;
 	margin-top: auto;
 	padding-top: 16px;
 	border-top: 1px solid var(--ltf-border);
+}
+
+.ltf .ltf-card__actions > * {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.ltf .ltf-card__actions .ltf-btn {
+	padding: 10px 14px;
+	font-size: 0.9rem;
+}
+
+/* The booking control fills whatever share of the row it is given. */
+.ltf .ltf-card__actions .ltf-book > .ltf-btn,
+.ltf .ltf-card__actions .ltf-book-menu,
+.ltf .ltf-card__actions .ltf-book-menu > summary {
+	width: 100%;
 }
 
 /* ---------- Buttons ---------- */
@@ -626,6 +646,10 @@
 	margin: 0;
 	padding: 6px;
 	list-style: none;
+	/* Flex, not block: multi-column layout does not apply to flex containers, so a site rule like
+	   `.entry-content ul { column-count: 2 !important }` cannot split this menu into columns. */
+	display: flex;
+	flex-direction: column;
 	background: var(--ltf-surface);
 	border: 1px solid var(--ltf-border);
 	border-radius: 12px;

@@ -27,6 +27,13 @@ add_action(
 		wp_enqueue_style( 'leone-live-theme', $base . 'themes/leonecentre/dist/css/leonecentre.com-20200325022605.css', array(), '1710412426' );
 		wp_enqueue_style( 'leone-live-custom', $base . 'themes/leonecentre/dist/css/custom.css', array( 'leone-live-theme' ), '1677140599' );
 		wp_enqueue_style( 'leone-live-glossary', $base . 'plugins/glossary-by-codeat-premium/assets/css/css-pro/tooltip-material.css', array(), '2.3.11' );
+
+		// The site's own custom CSS for content lists, copied from the live page.
+		wp_add_inline_style(
+			'leone-live-custom',
+			'.entry-content ul { background-color: #f5f5f5; padding: 25px; list-style-type: square; border: 1px solid #2cb2b2; column-count: 2 !important; }
+			 .entry-content ul li { margin-left: 5px; }'
+		);
 	},
 	5
 );
@@ -50,7 +57,7 @@ add_filter(
 			return $content;
 		}
 
-		return '<div class="module text text-default text-primary-no-container mar-top-xl cms sa-cf"><div class="container container-md"><div class="row"><div class="col-md-8 col-sm-8">' . $content . '</div></div></div></div>';
+		return '<div class="module text text-default text-primary-no-container mar-top-xl cms sa-cf"><div class="container container-md"><div class="row"><div class="col-md-8 col-sm-8"><div class="entry-content">' . $content . '</div></div></div></div></div>';
 	},
 	20
 );
