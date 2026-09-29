@@ -253,7 +253,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 1
     },
     {
       "name": "Carlene Harvey",
@@ -297,7 +298,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 2
     },
     {
       "name": "Holly Roberts",
@@ -338,7 +340,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 3
     },
     {
       "name": "Lucy Robertson-Ritchie",
@@ -374,7 +377,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 4
     },
     {
       "name": "Rasa Motiejune",
@@ -416,7 +420,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 5
     },
     {
       "name": "Lucy Watney",
@@ -461,7 +466,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 6
     },
     {
       "name": "Tonia Forster",
@@ -500,7 +506,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 7
     },
     {
       "name": "Martina Bador",
@@ -540,7 +547,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 8
     },
     {
       "name": "Cristina Lorefice",
@@ -582,7 +590,8 @@
       "languages": [
         "English",
         "Italian"
-      ]
+      ],
+      "order": 9
     },
     {
       "name": "Susan Harris",
@@ -628,7 +637,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 10
     },
     {
       "name": "Valerie Northcote",
@@ -673,7 +683,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 11
     },
     {
       "name": "William Conant",
@@ -721,7 +732,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 12
     },
     {
       "name": "Stelios Christodoulou",
@@ -761,7 +773,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 13
     },
     {
       "name": "Olena Baeva",
@@ -801,7 +814,8 @@
       "languages": [
         "English",
         "Russian"
-      ]
+      ],
+      "order": 14
     },
     {
       "name": "Julia Halpin",
@@ -842,7 +856,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 15
     },
     {
       "name": "Linda Bower",
@@ -883,7 +898,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 16
     },
     {
       "name": "Louanne Martin",
@@ -921,7 +937,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 17
     },
     {
       "name": "Alison Wragg",
@@ -960,7 +977,8 @@
       ],
       "languages": [
         "English"
-      ]
+      ],
+      "order": 18
     },
     {
       "name": "Cristina Vrech",
@@ -1004,7 +1022,8 @@
       "languages": [
         "English",
         "Italian"
-      ]
+      ],
+      "order": 19
     }
   ]
 }

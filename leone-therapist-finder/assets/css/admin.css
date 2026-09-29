@@ -137,6 +137,62 @@
 	font-size: 13px;
 }
 
+/* Order screen */
+
+.ltf-order-list {
+	margin: 12px 0 0;
+	padding: 0;
+	list-style: none;
+	max-width: 760px;
+}
+
+.ltf-order-item {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 0 0 6px;
+	padding: 8px 12px;
+	background: #fff;
+	border: 1px solid #dcdcde;
+	border-radius: 4px;
+}
+
+.ltf-order-list--drag .ltf-order-handle {
+	cursor: grab;
+	color: #8c8f94;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.ltf-order-list:not(.ltf-order-list--drag) .ltf-order-handle {
+	display: none;
+}
+
+.ltf-order-photo {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+}
+
+.ltf-order-name {
+	font-weight: 600;
+}
+
+.ltf-order-role {
+	flex: 1 1 auto;
+	color: #646970;
+	font-size: 12px;
+}
+
+.ltf-order-placeholder {
+	height: 50px;
+	margin: 0 0 6px;
+	background: #f0f6fc;
+	border: 1px dashed #3582c4;
+	border-radius: 4px;
+}
+
 .ltf-data-check {
 	margin: 0 0 12px 18px;
 	list-style: disc;

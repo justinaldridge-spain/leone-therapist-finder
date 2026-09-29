@@ -1,7 +1,7 @@
 === Leone Therapist Finder ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 0.3.0
+Stable tag: 0.4.0
 License: GPLv2 or later
 
 Filterable therapist directory for the Leone Centre, with Acuity Scheduling booking links.
@@ -19,6 +19,9 @@ Adds Location, Therapy type, Issue and Language tags to the existing therapist p
   live counts and shareable URLs are added in the browser.
 * Admin "Finder check" column and settings-page data check flag missing booking links,
   locations, therapy types, issues and photos.
+* Therapists > Order sets the order therapists appear in, by dragging (or typing positions).
+  The order is kept inside filtered results. It works even if the site's therapist post type has
+  no Order field of its own, and `order="name"` or `order="random"` can override it per page.
 * Therapists > Import tags fills in tagging from a data file, matching existing profiles by their
   URL slug. It previews before changing anything, skips therapists that are already tagged unless
   told otherwise, never touches bios, photos or page content, and can be undone.
@@ -35,7 +38,8 @@ Attributes:
   case the value is just the starting selection and visitors can change it.
 * `filters` – controls to show. Default: `location,issue,service,language,search`, minus any
   facet fixed above.
-* `order` – `default` (menu order), `name`, or `random` (shuffled in the browser each visit).
+* `order` – `default` (the order set under Therapists > Order), `name`, or `random` (shuffled in
+  the browser on each visit, which spreads enquiries across the team).
 * `width` – by default the finder fits the page's content column. `wide` lets it step outside a
   narrow column (up to 1200px), `full` uses the whole screen width, or give a number of pixels
   e.g. `width="1000"`. It is centred on the screen and never causes sideways scrolling.

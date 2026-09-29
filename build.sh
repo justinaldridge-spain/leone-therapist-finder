@@ -19,10 +19,11 @@ rm -f dist/*.zip
 node -e '
 const d = require("./playground/data/therapists.json");
 const fields = ["name", "slug", "role", "years", "accreditations", "locations", "calendars", "services", "issues", "languages"];
+// menu_order carries the running order from the live team page.
 const out = {
   generated: d.generated, source: d.source, note: d.note,
   locations: d.locations, services: d.services, issues: d.issues, languages: d.languages,
-  therapists: d.therapists.map((t) => Object.fromEntries(fields.map((f) => [f, t[f]]))),
+  therapists: d.therapists.map((t) => ({ ...Object.fromEntries(fields.map((f) => [f, t[f]])), order: t.menu_order + 1 })),
 };
 require("fs").writeFileSync("./leone-therapist-finder/data/leonecentre-team.json", JSON.stringify(out, null, 2) + "\n");
 '

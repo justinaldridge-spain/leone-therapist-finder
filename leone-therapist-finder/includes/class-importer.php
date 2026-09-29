@@ -429,6 +429,7 @@ final class Importer {
 			$before = array(
 				'terms' => array(),
 				'meta'  => array(),
+				'order' => (int) get_post_field( 'menu_order', $post_id ),
 			);
 			foreach ( $facets as $taxonomy ) {
 				$before['terms'][ $taxonomy ] = wp_get_object_terms( $post_id, $taxonomy, array( 'fields' => 'ids' ) );
@@ -466,6 +467,13 @@ final class Importer {
 			self::fill_meta( $post_id, Content_Model::META_ROLE, (string) ( $therapist['role'] ?? '' ), $plan['overwrite'] );
 			self::fill_meta( $post_id, Content_Model::META_YEARS, (int) ( $therapist['years'] ?? 0 ), $plan['overwrite'] );
 			self::fill_meta( $post_id, Content_Model::META_ACCREDITATIONS, implode( ', ', (array) ( $therapist['accreditations'] ?? array() ) ), $plan['overwrite'] );
+
+			// Running order from the data file. Only set when the profile has no order of its own,
+			// unless the import was told to replace existing tags.
+			$order = absint( $therapist['order'] ?? 0 );
+			if ( $order && ( $plan['overwrite'] || 0 === $before['order'] ) ) {
+				Order_Screen::set_position( $post_id, $order );
+			}
 
 			++$tagged;
 		}
@@ -516,6 +524,9 @@ final class Importer {
 		}
 
 		foreach ( $undo['posts'] as $post_id => $before ) {
+			if ( isset( $before['order'] ) ) {
+				Order_Screen::set_position( (int) $post_id, (int) $before['order'] );
+			}
 			foreach ( (array) $before['terms'] as $taxonomy => $ids ) {
 				wp_set_object_terms( (int) $post_id, array_map( 'intval', (array) $ids ), (string) $taxonomy );
 			}
@@ -615,6 +626,11 @@ final class Importer {
 			/* translators: %d: number of languages. */
 			sprintf( _n( '%d language', '%d languages', $languages, 'leone-therapist-finder' ), $languages ),
 		);
+
+		if ( ! empty( $therapist['order'] ) ) {
+			/* translators: %d: position in the finder. */
+			$parts[] = sprintf( __( 'position %d', 'leone-therapist-finder' ), absint( $therapist['order'] ) );
+		}
 
 		return implode( ' · ', $parts );
 	}

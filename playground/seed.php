@@ -93,7 +93,8 @@ foreach ( $ltf_data['therapists'] as $ltf_t ) {
 			'post_name'    => $ltf_t['slug'],
 			'post_content' => implode( "\n\n", $ltf_blocks ),
 			'post_excerpt' => $ltf_t['excerpt'],
-			'menu_order'   => (int) $ltf_t['menu_order'],
+			// Untagged mode mimics the live site, where every profile's order is 0.
+			'menu_order'   => $ltf_no_tags ? 0 : (int) $ltf_t['menu_order'],
 		),
 		true
 	);
