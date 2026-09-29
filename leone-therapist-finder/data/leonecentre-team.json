@@ -254,7 +254,8 @@
       "languages": [
         "English"
       ],
-      "order": 1
+      "order": 1,
+      "summary": "Cambridge-educated and BACP-registered member Nicky brings a warm approach and a depth of experience shaped by her extensive work in the relational and mental health sector, including partnerships with the NHS and educational settings."
     },
     {
       "name": "Carlene Harvey",
@@ -299,7 +300,8 @@
       "languages": [
         "English"
       ],
-      "order": 2
+      "order": 2,
+      "summary": "A highly experienced Couple, Individual and Systemic Therapist, BACP accredited, with over 20 years of therapeutic practice. She holds a Master of Education in Psychotherapeutic Counselling and a full specialism in Mentalisation-Based Therapy for Parenting Under Pressure (MBT-PP, Tavistock). Carlene is a trauma-informed therapist with experience in ADHD and neurodiversity, and extensive work with the RNIB, alongside her practice across the charity sector, NHS, and schools, with experience supporting individuals, couples and parents across a wide range of emotional and relational challenges. Her background as both Therapist and Clinical Supervisor reflects a deep understanding of the complexities of mental, relational, and neurodevelopmental health."
     },
     {
       "name": "Holly Roberts",
@@ -341,7 +343,8 @@
       "languages": [
         "English"
       ],
-      "order": 3
+      "order": 3,
+      "summary": "Holly Roberts is a BACP Registered Integrative Therapist with over 12 years of experience supporting individuals and couples through some of life’s most complex emotional and relationship challenges. Whether clients are navigating trauma, attachment wounds, neurodivergence, fertility journeys, relationship difficulties, low self-worth or significant life transitions, Holly offers a calm, compassionate and thoughtful space where they can begin to make sense of their experiences."
     },
     {
       "name": "Lucy Robertson-Ritchie",
@@ -378,7 +381,8 @@
       "languages": [
         "English"
       ],
-      "order": 4
+      "order": 4,
+      "summary": "Lucy is one of the most experienced therapists around. Highly skilled Systemic and Family Psychotherapist, Supervisor, Trainer, and Lecturer with over 20 years of experience supporting individuals, couples, children, young people, and families across NHS, charity, educational, and private settings."
     },
     {
       "name": "Rasa Motiejune",
@@ -421,7 +425,8 @@
       "languages": [
         "English"
       ],
-      "order": 5
+      "order": 5,
+      "summary": "Rasa is a highly experienced and sought-after Family and Couple Systemic Psychotherapist with over 15 years of experience across the NHS and private practice. Registered with the UKCP, Rasa draws on Systemic Psychotherapy, CBT (Cognitive Behavioural Therapy), DBT (Dialectical Behaviour Therapy), Trauma-Focused CBT and mindfulness, integrating these approaches to meet each client’s needs."
     },
     {
       "name": "Lucy Watney",
@@ -467,7 +472,8 @@
       "languages": [
         "English"
       ],
-      "order": 6
+      "order": 6,
+      "summary": "With over 15 years of therapeutic experience, Lucy Watney is a highly sought-after Family and Systemic Psychotherapist, accredited by the UKCP and a professional member of the Association for Family Therapy and Systemic Practice. Lucy’s experience spans across the NHS, schools, and charities."
     },
     {
       "name": "Tonia Forster",
@@ -507,7 +513,8 @@
       "languages": [
         "English"
       ],
-      "order": 7
+      "order": 7,
+      "summary": "Tonia is a highly experienced UKCP and AFT registered Family Therapist and Supervisor of Therapists, with over 30 years of experience supporting individuals, couples, and families."
     },
     {
       "name": "Martina Bador",
@@ -548,7 +555,8 @@
       "languages": [
         "English"
       ],
-      "order": 8
+      "order": 8,
+      "summary": "With over 18 years of experience as a therapist, Martina is a registered professional member of both the BACP and COSRT, offering specialist support as an Individual, Couples, and Psychosexual Therapist. She has worked extensively with diverse clients, including LGBTQIA+ communities and older couples, bringing sensitivity, inclusivity, and deep understanding to her practice."
     },
     {
       "name": "Cristina Lorefice",
@@ -591,7 +599,8 @@
         "English",
         "Italian"
       ],
-      "order": 9
+      "order": 9,
+      "summary": "Inspirational and highly experienced Individual and Couples Therapist, BACP accredited, with over 15 years’ professional practice. Highly experienced in Mindfulness-Based Cognitive Therapy (MBCT) and Solution-Focused Brief Therapy (SFBT). Cristina is also a motivational speaker, interviewer, author, and a seasoned clinical practitioner."
     },
     {
       "name": "Susan Harris",
@@ -638,7 +647,8 @@
       "languages": [
         "English"
       ],
-      "order": 10
+      "order": 10,
+      "summary": "Susan Harris is a highly experienced Family and Couple Systemic Psychotherapist with over 30 years’ experience working across the NHS and social care. Susan Harris is UKCP-registered and trained in a range of evidence-based systemic and attachment-based approaches, including Emotionally Focused Therapy (EFT) and Narrative Therapy."
     },
     {
       "name": "Valerie Northcote",
@@ -684,7 +694,8 @@
       "languages": [
         "English"
       ],
-      "order": 11
+      "order": 11,
+      "summary": "With over 20 years of experience and a warm, grounded relational style, Valerie is an MBACP- and COSRT-accredited Psychosexual and Relationship Therapist, EMDR Practitioner, Addiction Counsellor, and Clinical Supervisor. She works with individuals and couples experiencing sexual issues, relationship challenges, and the emotional impact of trauma, infidelity, or compulsive sexual behaviours."
     },
     {
       "name": "William Conant",
@@ -733,7 +744,8 @@
       "languages": [
         "English"
       ],
-      "order": 12
+      "order": 12,
+      "summary": "William is a highly experienced Integrative Therapist with over 18 years of experience, known for his warm, knowledgeable, understanding and relatable approach. As a professional member of BACP and COSRT, he specialises in working with individuals and couples on a range of issues, including anxiety, depression, low self-esteem, stress, addiction, psychosexual difficulties, intimacy and communication challenges, relationship ambivalence, fertility and IVF, infidelity and betrayal, “quiet quitting”, and work-related issues."
     },
     {
       "name": "Stelios Christodoulou",
@@ -774,7 +786,8 @@
       "languages": [
         "English"
       ],
-      "order": 13
+      "order": 13,
+      "summary": "Stelios is one of the most experienced therapists around, bringing over 25 years of rich and well-developed clinical and supervisory practice to his work."
     },
     {
       "name": "Olena Baeva",
@@ -815,7 +828,8 @@
         "English",
         "Russian"
       ],
-      "order": 14
+      "order": 14,
+      "summary": "With over 20 years of experience, Olena is a BACP-registered counselling practitioner (BPsych MA CSAccred) and clinical supervisor, working with individuals, couples, thruples and other relationship constellations."
     },
     {
       "name": "Julia Halpin",
@@ -857,7 +871,8 @@
       "languages": [
         "English"
       ],
-      "order": 15
+      "order": 15,
+      "summary": "Family and Couples Therapist for over 20 years, including as a systemic Tavistock-trained Supervisor of Family Therapists. A professional member of UKCP and AFT, with 35+ years’ experience within the NHS and mental health."
     },
     {
       "name": "Linda Bower",
@@ -899,7 +914,8 @@
       "languages": [
         "English"
       ],
-      "order": 16
+      "order": 16,
+      "summary": "An experienced Therapist, Therapeutic Services Manager and Trainer with a 25-year career in both the NHS and private practice. An accomplished Individual, Couples, and Psychosexual Therapist, holding Master’s Degrees in Integrative Psychotherapy and Contemporary Psychosexual Therapy."
     },
     {
       "name": "Louanne Martin",
@@ -938,7 +954,8 @@
       "languages": [
         "English"
       ],
-      "order": 17
+      "order": 17,
+      "summary": "As an Advanced Individual and Couples Therapist Supervisor, Practice Lead, Clinical Consultant, and therapist writer, Louanne is a highly experienced relational therapist with over 15 years of practice."
     },
     {
       "name": "Alison Wragg",
@@ -978,7 +995,8 @@
       "languages": [
         "English"
       ],
-      "order": 18
+      "order": 18,
+      "summary": "Founder and Lead Consultant of Leone Centre’s Corporate and Consultancy Services, Alison brings specialist experience in work culture, relational intelligence. Works with individuals, couples, and organisations. She helps with complex workplace dynamics, leadership challenges, executive coaching, and organisational consultancy."
     },
     {
       "name": "Cristina Vrech",
@@ -1023,7 +1041,8 @@
         "English",
         "Italian"
       ],
-      "order": 19
+      "order": 19,
+      "summary": "Founder and director of Leone Centre, Cristina Vrech, has 20+ years of experience in working and supporting people, 14+ years of extensive experience as a therapist and offers valuable knowledge to individuals and couples. Prior to being a therapist, she worked in the financial sector."
     }
   ]
 }

@@ -31,6 +31,11 @@
 	font-weight: 600;
 }
 
+.ltf-word-count.is-long {
+	color: #8a4b08;
+	font-weight: 600;
+}
+
 /* List table */
 
 .column-ltf_where {

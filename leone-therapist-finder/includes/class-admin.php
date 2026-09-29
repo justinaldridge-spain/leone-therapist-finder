@@ -73,6 +73,14 @@ final class Admin {
 				<label for="ltf_role"><strong><?php esc_html_e( 'Role / title', 'leone-therapist-finder' ); ?></strong></label>
 				<input type="text" class="widefat" id="ltf_role" name="ltf_role" value="<?php echo esc_attr( (string) get_post_meta( $post->ID, Content_Model::META_ROLE, true ) ); ?>" placeholder="<?php esc_attr_e( 'e.g. Couples and Family Therapist', 'leone-therapist-finder' ); ?>">
 			</p>
+			<p>
+				<label for="ltf_summary"><strong><?php esc_html_e( 'Finder summary', 'leone-therapist-finder' ); ?></strong></label>
+				<textarea class="widefat" id="ltf_summary" name="ltf_summary" rows="3" data-ltf-summary placeholder="<?php esc_attr_e( 'A short description shown on the finder card, e.g. the summary used on the Meet Our Team page.', 'leone-therapist-finder' ); ?>"><?php echo esc_textarea( (string) get_post_meta( $post->ID, Content_Model::META_SUMMARY, true ) ); ?></textarea>
+				<span class="description">
+					<?php esc_html_e( 'Around 30 words works best; roughly four lines are shown. Leave empty to use the excerpt, or the start of the bio.', 'leone-therapist-finder' ); ?>
+					<span class="ltf-word-count" data-ltf-summary-count></span>
+				</span>
+			</p>
 			<div class="ltf-metabox__cols">
 				<p>
 					<label for="ltf_years"><strong><?php esc_html_e( 'Years of experience', 'leone-therapist-finder' ); ?></strong></label>
@@ -168,6 +176,7 @@ final class Admin {
 		}
 
 		self::update_or_delete( $post_id, Content_Model::META_ROLE, sanitize_text_field( wp_unslash( $_POST['ltf_role'] ?? '' ) ) );
+		self::update_or_delete( $post_id, Content_Model::META_SUMMARY, sanitize_textarea_field( wp_unslash( $_POST['ltf_summary'] ?? '' ) ) );
 		self::update_or_delete( $post_id, Content_Model::META_YEARS, absint( $_POST['ltf_years'] ?? 0 ) );
 		self::update_or_delete( $post_id, Content_Model::META_ACCREDITATIONS, sanitize_text_field( wp_unslash( $_POST['ltf_accreditations'] ?? '' ) ) );
 		self::update_or_delete( $post_id, Content_Model::META_HIDE, empty( $_POST['ltf_hide'] ) ? '' : '1' );
@@ -232,6 +241,9 @@ final class Admin {
 		}
 		if ( '' === (string) get_post_meta( $post->ID, Content_Model::META_ROLE, true ) ) {
 			$problems[] = __( 'No role / title', 'leone-therapist-finder' );
+		}
+		if ( '' === trim( (string) get_post_meta( $post->ID, Content_Model::META_SUMMARY, true ) ) && ! has_excerpt( $post ) ) {
+			$problems[] = __( 'No finder summary (using the start of the bio)', 'leone-therapist-finder' );
 		}
 
 		return (array) apply_filters( 'ltf_admin_checks', $problems, $post );

@@ -23,6 +23,7 @@ final class Content_Model {
 	const TAX_LANGUAGE = 'ltf_language';
 
 	const META_ROLE           = '_ltf_role';
+	const META_SUMMARY        = '_ltf_summary';
 	const META_YEARS          = '_ltf_years';
 	const META_ACCREDITATIONS = '_ltf_accreditations';
 	const META_CALENDARS      = '_ltf_calendars';
@@ -176,6 +177,16 @@ final class Content_Model {
 				'type'              => 'string',
 				'single'            => true,
 				'sanitize_callback' => 'sanitize_text_field',
+				'auth_callback'     => $auth,
+			)
+		);
+		register_post_meta(
+			$post_type,
+			self::META_SUMMARY,
+			array(
+				'type'              => 'string',
+				'single'            => true,
+				'sanitize_callback' => 'sanitize_textarea_field',
 				'auth_callback'     => $auth,
 			)
 		);

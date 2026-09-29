@@ -434,7 +434,7 @@ final class Importer {
 			foreach ( $facets as $taxonomy ) {
 				$before['terms'][ $taxonomy ] = wp_get_object_terms( $post_id, $taxonomy, array( 'fields' => 'ids' ) );
 			}
-			foreach ( array( Content_Model::META_ROLE, Content_Model::META_YEARS, Content_Model::META_ACCREDITATIONS, Content_Model::META_CALENDARS ) as $key ) {
+			foreach ( array( Content_Model::META_ROLE, Content_Model::META_SUMMARY, Content_Model::META_YEARS, Content_Model::META_ACCREDITATIONS, Content_Model::META_CALENDARS ) as $key ) {
 				$before['meta'][ $key ] = get_post_meta( $post_id, $key, true );
 			}
 			$snapshot[ $post_id ] = $before;
@@ -465,6 +465,7 @@ final class Importer {
 			}
 
 			self::fill_meta( $post_id, Content_Model::META_ROLE, (string) ( $therapist['role'] ?? '' ), $plan['overwrite'] );
+			self::fill_meta( $post_id, Content_Model::META_SUMMARY, sanitize_textarea_field( (string) ( $therapist['summary'] ?? '' ) ), $plan['overwrite'] );
 			self::fill_meta( $post_id, Content_Model::META_YEARS, (int) ( $therapist['years'] ?? 0 ), $plan['overwrite'] );
 			self::fill_meta( $post_id, Content_Model::META_ACCREDITATIONS, implode( ', ', (array) ( $therapist['accreditations'] ?? array() ) ), $plan['overwrite'] );
 
@@ -626,6 +627,10 @@ final class Importer {
 			/* translators: %d: number of languages. */
 			sprintf( _n( '%d language', '%d languages', $languages, 'leone-therapist-finder' ), $languages ),
 		);
+
+		if ( ! empty( $therapist['summary'] ) ) {
+			$parts[] = __( 'summary', 'leone-therapist-finder' );
+		}
 
 		if ( ! empty( $therapist['order'] ) ) {
 			/* translators: %d: position in the finder. */

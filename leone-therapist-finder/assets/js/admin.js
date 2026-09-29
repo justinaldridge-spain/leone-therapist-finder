@@ -15,6 +15,19 @@
 		}
 	} );
 
+	// Therapist edit screen: word count for the finder summary.
+	const summary = document.querySelector( '[data-ltf-summary]' );
+	const counter = document.querySelector( '[data-ltf-summary-count]' );
+	if ( summary && counter ) {
+		const count = () => {
+			const words = summary.value.trim().split( /\s+/ ).filter( Boolean ).length;
+			counter.textContent = words ? ` ${ words } words.` : '';
+			counter.className = 'ltf-word-count' + ( words > 45 ? ' is-long' : '' );
+		};
+		summary.addEventListener( 'input', count );
+		count();
+	}
+
 	// Settings screen: shortcode builder.
 	const builder = document.getElementById( 'ltf-builder' );
 	if ( ! builder ) {

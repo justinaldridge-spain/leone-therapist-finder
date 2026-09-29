@@ -139,6 +139,7 @@ foreach ( $ltf_data['therapists'] as $ltf_t ) {
  */
 function self_tag_therapist( int $ltf_id, array $ltf_t, array $ltf_locations ): void {
 	update_post_meta( $ltf_id, Content_Model::META_ROLE, $ltf_t['role'] );
+	update_post_meta( $ltf_id, Content_Model::META_SUMMARY, $ltf_t['excerpt'] );
 	if ( $ltf_t['years'] ) {
 		update_post_meta( $ltf_id, Content_Model::META_YEARS, (int) $ltf_t['years'] );
 	}

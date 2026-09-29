@@ -23,7 +23,9 @@ const fields = ["name", "slug", "role", "years", "accreditations", "locations", 
 const out = {
   generated: d.generated, source: d.source, note: d.note,
   locations: d.locations, services: d.services, issues: d.issues, languages: d.languages,
-  therapists: d.therapists.map((t) => ({ ...Object.fromEntries(fields.map((f) => [f, t[f]])), order: t.menu_order + 1 })),
+  // `summary` is the short description from the live Meet Our Team page, which reads better
+  // than the opening of each profile bio.
+  therapists: d.therapists.map((t) => ({ ...Object.fromEntries(fields.map((f) => [f, t[f]])), order: t.menu_order + 1, summary: t.excerpt })),
 };
 require("fs").writeFileSync("./leone-therapist-finder/data/leonecentre-team.json", JSON.stringify(out, null, 2) + "\n");
 '

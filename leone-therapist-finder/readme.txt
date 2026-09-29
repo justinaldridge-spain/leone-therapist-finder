@@ -1,7 +1,7 @@
 === Leone Therapist Finder ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 0.5.0
+Stable tag: 0.6.0
 License: GPLv2 or later
 
 Filterable therapist directory for the Leone Centre, with Acuity Scheduling booking links.
@@ -13,6 +13,9 @@ Adds Location, Therapy type, Issue and Language tags to the existing therapist p
 `[therapist_finder]` shortcode that lets visitors filter therapists instantly.
 
 * Works with the site's existing therapist profiles; creates the post type only if missing.
+* Each therapist has a "Finder summary" field for the short description shown on their card,
+  so the wording can be written for the finder rather than taken from the profile bio. It falls
+  back to the excerpt, then to the start of the bio.
 * Booking buttons deep-link to Acuity (calendar + optional appointment type), so intake forms,
   payments and confirmation emails are unchanged. No API keys needed.
 * Cards are rendered on the server (SEO-friendly, works without JavaScript); filtering,

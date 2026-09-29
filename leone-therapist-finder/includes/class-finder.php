@@ -364,8 +364,15 @@ final class Finder {
 
 		$role           = (string) get_post_meta( $post->ID, Content_Model::META_ROLE, true );
 		$accreditations = array_values( array_filter( array_map( 'trim', explode( ',', (string) get_post_meta( $post->ID, Content_Model::META_ACCREDITATIONS, true ) ) ) ) );
-		$summary        = has_excerpt( $post ) ? $post->post_excerpt : $post->post_content;
-		$summary        = wp_trim_words( wp_strip_all_tags( strip_shortcodes( $summary ) ), 34 );
+		// The card summary: the "Finder summary" field if one was written, otherwise the excerpt,
+		// otherwise the start of the bio (trimmed).
+		$summary = (string) get_post_meta( $post->ID, Content_Model::META_SUMMARY, true );
+		if ( '' === trim( $summary ) ) {
+			$fallback = has_excerpt( $post ) ? $post->post_excerpt : $post->post_content;
+			$summary  = wp_trim_words( wp_strip_all_tags( strip_shortcodes( $fallback ) ), 34 );
+		} else {
+			$summary = wp_strip_all_tags( $summary );
+		}
 
 		$haystack = array( $post->post_title, $role, $summary, implode( ' ', $accreditations ) );
 		foreach ( $facets as $names ) {
