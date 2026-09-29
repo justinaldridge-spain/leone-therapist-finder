@@ -1,0 +1,1010 @@
+{
+  "generated": "2026-09-21",
+  "source": "https://www.leonecentre.com/about-us/meet-our-team/ and individual profile pages",
+  "note": "Services mapped from each card's \"can help with\" links and role title. Issues auto-matched from bio text by keyword - needs review by the Leone Centre team.",
+  "locations": [
+    {
+      "slug": "online",
+      "name": "Online",
+      "description": "Secure video sessions on Zoom, wherever you are."
+    },
+    {
+      "slug": "fulham",
+      "name": "Fulham",
+      "description": "Studio 19, Hurlingham Studios, Ranelagh Gardens, London SW6 3PA"
+    },
+    {
+      "slug": "kensington",
+      "name": "Kensington",
+      "description": "2 Kenway Road, London SW5 0RR"
+    },
+    {
+      "slug": "wimbledon",
+      "name": "Wimbledon",
+      "description": "40-44 The Broadway, London SW19 1RQ"
+    },
+    {
+      "slug": "belgravia",
+      "name": "Belgravia",
+      "description": "2 Eaton Gate, London SW1W 9BJ"
+    }
+  ],
+  "services": [
+    {
+      "slug": "individual-counselling",
+      "name": "Individual Counselling"
+    },
+    {
+      "slug": "couples-counselling",
+      "name": "Couples & Relationship Counselling"
+    },
+    {
+      "slug": "family-therapy",
+      "name": "Family Therapy"
+    },
+    {
+      "slug": "psychosexual-therapy",
+      "name": "Psychosexual Therapy"
+    },
+    {
+      "slug": "divorce-counselling",
+      "name": "Divorce Counselling"
+    },
+    {
+      "slug": "cbt",
+      "name": "CBT"
+    },
+    {
+      "slug": "emdr",
+      "name": "EMDR Therapy"
+    },
+    {
+      "slug": "neurodiversity-affirmative",
+      "name": "Neurodiversity Affirmative Therapy"
+    },
+    {
+      "slug": "lgbtqi-affirmative",
+      "name": "LGBTQI+ Affirmative Counselling"
+    },
+    {
+      "slug": "fast-track",
+      "name": "Fast Track Therapy"
+    },
+    {
+      "slug": "organisational",
+      "name": "Organisational & Leadership Consultancy"
+    }
+  ],
+  "issues": [
+    {
+      "slug": "relationships",
+      "name": "Relationships",
+      "children": [
+        {
+          "slug": "infidelity-trust",
+          "name": "Infidelity & trust"
+        },
+        {
+          "slug": "separation-divorce",
+          "name": "Separation & divorce"
+        },
+        {
+          "slug": "communication-conflict",
+          "name": "Communication & conflict"
+        },
+        {
+          "slug": "sex-intimacy",
+          "name": "Sex & intimacy"
+        },
+        {
+          "slug": "polyamory",
+          "name": "Polyamory & non-monogamy"
+        }
+      ]
+    },
+    {
+      "slug": "mental-health",
+      "name": "Mental health",
+      "children": [
+        {
+          "slug": "anxiety",
+          "name": "Anxiety & panic"
+        },
+        {
+          "slug": "stress-burnout",
+          "name": "Stress & burnout"
+        },
+        {
+          "slug": "depression",
+          "name": "Depression & low mood"
+        },
+        {
+          "slug": "trauma",
+          "name": "Trauma & PTSD"
+        },
+        {
+          "slug": "self-esteem",
+          "name": "Self-esteem & confidence"
+        },
+        {
+          "slug": "addiction",
+          "name": "Addiction & compulsive behaviour"
+        },
+        {
+          "slug": "eating-disorders",
+          "name": "Eating disorders"
+        },
+        {
+          "slug": "self-harm",
+          "name": "Self-harm"
+        }
+      ]
+    },
+    {
+      "slug": "family-life",
+      "name": "Family & life changes",
+      "children": [
+        {
+          "slug": "parenting",
+          "name": "Parenting & young people"
+        },
+        {
+          "slug": "perinatal",
+          "name": "Pregnancy & new parents"
+        },
+        {
+          "slug": "fertility",
+          "name": "Fertility & IVF"
+        },
+        {
+          "slug": "adoption-fostering",
+          "name": "Adoption & fostering"
+        },
+        {
+          "slug": "bereavement",
+          "name": "Bereavement & grief"
+        },
+        {
+          "slug": "life-transitions",
+          "name": "Life transitions"
+        },
+        {
+          "slug": "menopause",
+          "name": "Menopause"
+        },
+        {
+          "slug": "health-diagnosis",
+          "name": "Illness & life-changing diagnoses"
+        }
+      ]
+    },
+    {
+      "slug": "identity-work",
+      "name": "Identity & work",
+      "children": [
+        {
+          "slug": "neurodiversity",
+          "name": "Neurodiversity (ADHD, autism)"
+        },
+        {
+          "slug": "lgbtqia",
+          "name": "LGBTQIA+ & gender identity"
+        },
+        {
+          "slug": "work-career",
+          "name": "Work & career"
+        },
+        {
+          "slug": "abuse",
+          "name": "Abuse & domestic violence"
+        }
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "slug": "english",
+      "name": "English"
+    },
+    {
+      "slug": "italian",
+      "name": "Italian"
+    },
+    {
+      "slug": "russian",
+      "name": "Russian"
+    }
+  ],
+  "therapists": [
+    {
+      "name": "Nicky Wildin",
+      "slug": "nicky-wildin",
+      "role": "Individual and Couples Therapist",
+      "years": 20,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "11335749"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "stress-burnout",
+        "trauma",
+        "self-harm",
+        "parenting",
+        "bereavement",
+        "life-transitions",
+        "neurodiversity"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Carlene Harvey",
+      "slug": "carlene-harvey",
+      "role": "Individual and Couples Therapist",
+      "years": 20,
+      "accreditations": [
+        "BACP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "11202646"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "self-harm",
+        "parenting",
+        "bereavement",
+        "life-transitions",
+        "neurodiversity",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Holly Roberts",
+      "slug": "holly-roberts",
+      "role": "Individual and Couples Psychotherapist",
+      "years": 12,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "14235641"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "neurodiversity-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "polyamory",
+        "anxiety",
+        "stress-burnout",
+        "trauma",
+        "self-esteem",
+        "parenting",
+        "perinatal",
+        "fertility",
+        "life-transitions",
+        "neurodiversity",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Lucy Robertson-Ritchie",
+      "slug": "lucy-robertson-ritchie",
+      "role": "Individual, Couples and Family Systemic Psychotherapist",
+      "years": 20,
+      "accreditations": [],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "14161144"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "family-therapy",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-harm",
+        "parenting",
+        "adoption-fostering",
+        "neurodiversity",
+        "lgbtqia"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Rasa Motiejune",
+      "slug": "rasa-motiejune",
+      "role": "Couples and Family Therapist",
+      "years": 15,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "12334720"
+      },
+      "services": [
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "cbt",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "eating-disorders",
+        "parenting",
+        "life-transitions",
+        "neurodiversity",
+        "lgbtqia",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Lucy Watney",
+      "slug": "lucy-watney",
+      "role": "Individual, Couples and Family Therapist",
+      "years": 15,
+      "accreditations": [
+        "UKCP"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "wimbledon"
+      ],
+      "calendars": {
+        "online": "12010816",
+        "fulham": "12010813",
+        "wimbledon": "12010802"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "addiction",
+        "parenting",
+        "bereavement",
+        "neurodiversity"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Tonia Forster",
+      "slug": "tonia-forster",
+      "role": "Individual, Couples and Family Therapist",
+      "years": 30,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "11202545"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "anxiety",
+        "depression",
+        "trauma",
+        "eating-disorders",
+        "parenting",
+        "life-transitions",
+        "neurodiversity",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Martina Bador",
+      "slug": "martina-bador",
+      "role": "Individual, Couples and Psychosexual Therapist",
+      "years": 18,
+      "accreditations": [
+        "BACP",
+        "COSRT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "7199615"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "lgbtqi-affirmative",
+        "organisational"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "depression",
+        "addiction",
+        "fertility",
+        "menopause",
+        "neurodiversity",
+        "lgbtqia",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Cristina Lorefice",
+      "slug": "cristina-lorefice",
+      "role": "Individual and Couples Therapist",
+      "years": 15,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "10623829"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "addiction",
+        "eating-disorders",
+        "neurodiversity",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English",
+        "Italian"
+      ]
+    },
+    {
+      "name": "Susan Harris",
+      "slug": "susan-harris",
+      "role": "Couples and Family Therapist",
+      "years": 30,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "belgravia"
+      ],
+      "calendars": {
+        "online": "12959811",
+        "fulham": "12954163",
+        "belgravia": "12954086"
+      },
+      "services": [
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative",
+        "fast-track"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "self-harm",
+        "parenting",
+        "perinatal",
+        "life-transitions",
+        "neurodiversity",
+        "lgbtqia"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Valerie Northcote",
+      "slug": "valerie-northcote",
+      "role": "Individual, Couples, and EMDR Therapist",
+      "years": 20,
+      "accreditations": [
+        "BACP",
+        "COSRT",
+        "EMDR UK"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "13265582"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "emdr",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "addiction",
+        "parenting",
+        "bereavement",
+        "life-transitions",
+        "neurodiversity",
+        "lgbtqia",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "William Conant",
+      "slug": "william-conant",
+      "role": "Individual, Couples and Psychosexual Therapist",
+      "years": 18,
+      "accreditations": [
+        "BACP",
+        "COSRT"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "wimbledon"
+      ],
+      "calendars": {
+        "online": "3825020",
+        "fulham": "5281857",
+        "wimbledon": "10218503"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-esteem",
+        "addiction",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "lgbtqia",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Stelios Christodoulou",
+      "slug": "stelios-christodoulou",
+      "role": "Individual & Couple Therapist",
+      "years": 25,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online",
+        "fulham"
+      ],
+      "calendars": {
+        "online": "3825001",
+        "fulham": "3822299"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "addiction",
+        "bereavement",
+        "life-transitions",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Olena Baeva",
+      "slug": "olena-baeva-couples-counsellor",
+      "role": "Individual and Couples / Marriage Counsellor",
+      "years": 20,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "4356208"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "communication-conflict",
+        "sex-intimacy",
+        "polyamory",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "parenting",
+        "bereavement",
+        "health-diagnosis",
+        "neurodiversity",
+        "lgbtqia"
+      ],
+      "languages": [
+        "English",
+        "Russian"
+      ]
+    },
+    {
+      "name": "Julia Halpin",
+      "slug": "julia-halpin",
+      "role": "Family, Couples and Systemic Psychotherapist",
+      "years": 20,
+      "accreditations": [
+        "UKCP",
+        "AFT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "6962430"
+      },
+      "services": [
+        "couples-counselling",
+        "family-therapy",
+        "divorce-counselling",
+        "neurodiversity-affirmative",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "trauma",
+        "self-harm",
+        "parenting",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "neurodiversity"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Linda Bower",
+      "slug": "linda-bower",
+      "role": "Individual, Couples and Psychosexual Therapist",
+      "years": null,
+      "accreditations": [
+        "UKCP",
+        "BACP",
+        "COSRT"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "8642195"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "communication-conflict",
+        "sex-intimacy",
+        "anxiety",
+        "self-esteem",
+        "parenting",
+        "perinatal",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "lgbtqia",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Louanne Martin",
+      "slug": "louanne-martin",
+      "role": "Individual & Couples Therapist",
+      "years": 15,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online"
+      ],
+      "calendars": {
+        "online": "8609513"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "divorce-counselling",
+        "lgbtqi-affirmative"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "addiction",
+        "eating-disorders",
+        "self-harm",
+        "parenting",
+        "fertility",
+        "bereavement",
+        "health-diagnosis",
+        "work-career",
+        "abuse"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Alison Wragg",
+      "slug": "alison-wragg",
+      "role": "Founder - Director - Organisational Consultant, Individual/Couple Therapist & Certified MBTI Practitioner",
+      "years": 30,
+      "accreditations": [
+        "BACP",
+        "HCPC"
+      ],
+      "locations": [
+        "online",
+        "fulham",
+        "belgravia"
+      ],
+      "calendars": {
+        "online": "3824927",
+        "fulham": "https://leonecentre.as.me/alison-wragg-19",
+        "belgravia": "10158772"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative",
+        "organisational"
+      ],
+      "issues": [
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "self-esteem",
+        "work-career"
+      ],
+      "languages": [
+        "English"
+      ]
+    },
+    {
+      "name": "Cristina Vrech",
+      "slug": "cristina-vrech",
+      "role": "Founder and Director - Individual & Couple Therapist, Supervisor, Corporate Services",
+      "years": 20,
+      "accreditations": [
+        "BACP"
+      ],
+      "locations": [
+        "online",
+        "fulham"
+      ],
+      "calendars": {
+        "online": "3824982",
+        "fulham": "3776264"
+      },
+      "services": [
+        "individual-counselling",
+        "couples-counselling",
+        "psychosexual-therapy",
+        "divorce-counselling",
+        "cbt",
+        "lgbtqi-affirmative",
+        "organisational"
+      ],
+      "issues": [
+        "infidelity-trust",
+        "separation-divorce",
+        "communication-conflict",
+        "anxiety",
+        "stress-burnout",
+        "depression",
+        "self-esteem",
+        "addiction",
+        "parenting",
+        "fertility",
+        "bereavement",
+        "life-transitions"
+      ],
+      "languages": [
+        "English",
+        "Italian"
+      ]
+    }
+  ]
+}

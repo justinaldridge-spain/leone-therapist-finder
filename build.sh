@@ -12,8 +12,20 @@ TAR=tar
 
 VERSION=$(sed -n 's/^ \* Version: *//p' leone-therapist-finder/leone-therapist-finder.php | tr -d '\r')
 
-mkdir -p dist
+mkdir -p dist leone-therapist-finder/data
 rm -f dist/*.zip
+
+# The tagging file the plugin's importer ships with: the demo data minus bios and photos.
+node -e '
+const d = require("./playground/data/therapists.json");
+const fields = ["name", "slug", "role", "years", "accreditations", "locations", "calendars", "services", "issues", "languages"];
+const out = {
+  generated: d.generated, source: d.source, note: d.note,
+  locations: d.locations, services: d.services, issues: d.issues, languages: d.languages,
+  therapists: d.therapists.map((t) => Object.fromEntries(fields.map((f) => [f, t[f]]))),
+};
+require("fs").writeFileSync("./leone-therapist-finder/data/leonecentre-team.json", JSON.stringify(out, null, 2) + "\n");
+'
 
 "$TAR" -a -cf "dist/leone-therapist-finder-$VERSION.zip" leone-therapist-finder
 cp "dist/leone-therapist-finder-$VERSION.zip" dist/leone-therapist-finder.zip   # Stable name for the blueprint.

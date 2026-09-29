@@ -35,6 +35,10 @@ if ( get_option( 'ltf_demo_seeded' ) ) {
 
 wp_set_current_user( 1 );
 
+// With LTF_SEED_NO_TAGS the profiles are created untagged, like the real site before an import.
+// Used to test the plugin's "Import tags" screen.
+$ltf_no_tags = defined( 'LTF_SEED_NO_TAGS' ) && LTF_SEED_NO_TAGS;
+
 $ltf_dir  = __DIR__;
 $ltf_data = json_decode( (string) file_get_contents( $ltf_dir . '/data/therapists.json' ), true );
 
@@ -57,19 +61,19 @@ $ltf_term = static function ( string $taxonomy, string $slug, string $name, arra
 
 // Terms.
 $ltf_locations = array();
-foreach ( $ltf_data['locations'] as $ltf_loc ) {
+foreach ( $ltf_no_tags ? array() : $ltf_data['locations'] as $ltf_loc ) {
 	$ltf_locations[ $ltf_loc['slug'] ] = $ltf_term( Content_Model::TAX_LOCATION, $ltf_loc['slug'], $ltf_loc['name'], array( 'description' => $ltf_loc['description'] ) );
 }
-foreach ( $ltf_data['services'] as $ltf_service ) {
+foreach ( $ltf_no_tags ? array() : $ltf_data['services'] as $ltf_service ) {
 	$ltf_term( Content_Model::TAX_SERVICE, $ltf_service['slug'], $ltf_service['name'] );
 }
-foreach ( $ltf_data['issues'] as $ltf_group ) {
+foreach ( $ltf_no_tags ? array() : $ltf_data['issues'] as $ltf_group ) {
 	$ltf_parent = $ltf_term( Content_Model::TAX_ISSUE, $ltf_group['slug'], $ltf_group['name'] );
 	foreach ( $ltf_group['children'] as $ltf_child ) {
 		$ltf_term( Content_Model::TAX_ISSUE, $ltf_child['slug'], $ltf_child['name'], array( 'parent' => $ltf_parent ) );
 	}
 }
-foreach ( $ltf_data['languages'] as $ltf_lang ) {
+foreach ( $ltf_no_tags ? array() : $ltf_data['languages'] as $ltf_lang ) {
 	$ltf_term( Content_Model::TAX_LANGUAGE, $ltf_lang['slug'], $ltf_lang['name'] );
 }
 
@@ -99,26 +103,9 @@ foreach ( $ltf_data['therapists'] as $ltf_t ) {
 		continue;
 	}
 
-	update_post_meta( $ltf_id, Content_Model::META_ROLE, $ltf_t['role'] );
-	if ( $ltf_t['years'] ) {
-		update_post_meta( $ltf_id, Content_Model::META_YEARS, (int) $ltf_t['years'] );
+	if ( ! $ltf_no_tags ) {
+		self_tag_therapist( $ltf_id, $ltf_t, $ltf_locations );
 	}
-	if ( $ltf_t['accreditations'] ) {
-		update_post_meta( $ltf_id, Content_Model::META_ACCREDITATIONS, implode( ', ', $ltf_t['accreditations'] ) );
-	}
-
-	$ltf_calendars = array();
-	foreach ( $ltf_t['calendars'] as $ltf_slug => $ltf_ref ) {
-		if ( ! empty( $ltf_locations[ $ltf_slug ] ) ) {
-			$ltf_calendars[ $ltf_locations[ $ltf_slug ] ] = (string) $ltf_ref;
-		}
-	}
-	update_post_meta( $ltf_id, Content_Model::META_CALENDARS, $ltf_calendars );
-
-	wp_set_object_terms( $ltf_id, $ltf_t['locations'], Content_Model::TAX_LOCATION );
-	wp_set_object_terms( $ltf_id, $ltf_t['services'], Content_Model::TAX_SERVICE );
-	wp_set_object_terms( $ltf_id, $ltf_t['issues'], Content_Model::TAX_ISSUE );
-	wp_set_object_terms( $ltf_id, array_map( 'strtolower', $ltf_t['languages'] ), Content_Model::TAX_LANGUAGE );
 
 	// Photo (downloaded from the team page into playground/photos/).
 	foreach ( array( 'jpg', 'png' ) as $ltf_ext ) {
@@ -144,6 +131,32 @@ foreach ( $ltf_data['therapists'] as $ltf_t ) {
 		}
 		break;
 	}
+}
+
+/**
+ * Applies the demo tagging to one therapist.
+ */
+function self_tag_therapist( int $ltf_id, array $ltf_t, array $ltf_locations ): void {
+	update_post_meta( $ltf_id, Content_Model::META_ROLE, $ltf_t['role'] );
+	if ( $ltf_t['years'] ) {
+		update_post_meta( $ltf_id, Content_Model::META_YEARS, (int) $ltf_t['years'] );
+	}
+	if ( $ltf_t['accreditations'] ) {
+		update_post_meta( $ltf_id, Content_Model::META_ACCREDITATIONS, implode( ', ', $ltf_t['accreditations'] ) );
+	}
+
+	$ltf_calendars = array();
+	foreach ( $ltf_t['calendars'] as $ltf_slug => $ltf_ref ) {
+		if ( ! empty( $ltf_locations[ $ltf_slug ] ) ) {
+			$ltf_calendars[ $ltf_locations[ $ltf_slug ] ] = (string) $ltf_ref;
+		}
+	}
+	update_post_meta( $ltf_id, Content_Model::META_CALENDARS, $ltf_calendars );
+
+	wp_set_object_terms( $ltf_id, $ltf_t['locations'], Content_Model::TAX_LOCATION );
+	wp_set_object_terms( $ltf_id, $ltf_t['services'], Content_Model::TAX_SERVICE );
+	wp_set_object_terms( $ltf_id, $ltf_t['issues'], Content_Model::TAX_ISSUE );
+	wp_set_object_terms( $ltf_id, array_map( 'strtolower', $ltf_t['languages'] ), Content_Model::TAX_LANGUAGE );
 }
 
 // Demo pages: each shows a different shortcode set-up.

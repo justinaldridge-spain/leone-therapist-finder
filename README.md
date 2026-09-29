@@ -97,8 +97,11 @@ Tested in Playground (PHP 8.3, WordPress latest, `WP_DEBUG` on, no notices); lin
 
 1. Upload `dist/leone-therapist-finder-0.1.0.zip` under Plugins > Add New > Upload.
 2. Under Therapists > Finder settings, confirm the therapist post type.
-3. Create the Locations, Therapy types and Issues (or import the demo's list).
-4. Tag each therapist and paste their calendar IDs. The "Finder check" column shows what's missing.
+3. Go to **Therapists > Import tags**, press Preview, check the list, then Import. This creates the
+   locations, therapy types, issues and languages and tags the existing profiles, matching them by
+   URL slug. It changes no bios, photos or page content, and there is an Undo button afterwards.
+   Anyone the importer could not match is listed, to tag by hand.
+4. Check the tags. The "Finder check" column shows anything still missing.
 5. Add shortcodes to pages. The Finder settings page has a shortcode builder.
 
 Styles inherit the theme's fonts and use Leone's teal (`#2cb2b2`). Buttons use a darker shade

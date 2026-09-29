@@ -1,7 +1,7 @@
 === Leone Therapist Finder ===
 Requires at least: 6.3
 Requires PHP: 7.4
-Stable tag: 0.1.0
+Stable tag: 0.2.0
 License: GPLv2 or later
 
 Filterable therapist directory for the Leone Centre, with Acuity Scheduling booking links.
@@ -19,6 +19,9 @@ Adds Location, Therapy type, Issue and Language tags to the existing therapist p
   live counts and shareable URLs are added in the browser.
 * Admin "Finder check" column and settings-page data check flag missing booking links,
   locations, therapy types, issues and photos.
+* Therapists > Import tags fills in tagging from a data file, matching existing profiles by their
+  URL slug. It previews before changing anything, skips therapists that are already tagged unless
+  told otherwise, never touches bios, photos or page content, and can be undone.
 * Pushes `therapist_finder_filter` and `therapist_finder_book` events to the GTM dataLayer.
 
 == Shortcode ==

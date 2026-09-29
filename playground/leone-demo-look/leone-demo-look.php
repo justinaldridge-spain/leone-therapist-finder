@@ -22,20 +22,32 @@ add_action(
 		$remote = $_SERVER['REMOTE_ADDR'] ?? ''; // phpcs:ignore WordPress.Security.ValidatedSanitizedInput
 		$local  = in_array( $remote, array( '127.0.0.1', '::1', '' ), true );
 
-		if ( is_user_logged_in() || ! $local || wp_doing_cron() || ( defined( 'WP_CLI' ) && WP_CLI ) || isset( $_GET['ltf_demo_login'] ) ) { // phpcs:ignore WordPress.Security.NonceVerification
+		if ( is_user_logged_in() || ! $local || wp_doing_cron() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
 			return;
 		}
 
+		// Authenticate this very request as well as sending the cookie: the auth cookie WordPress
+		// just issued is not in $_COOKIE yet, and redirecting instead would break Blueprint steps.
+		$adopt = static function ( $cookie, $name ) {
+			$_COOKIE[ $name ] = $cookie;
+		};
+		add_action(
+			'set_auth_cookie',
+			static function ( $cookie, $expire, $expiration, $user_id, $scheme ) use ( $adopt ) {
+				$adopt( $cookie, 'secure_auth' === $scheme ? SECURE_AUTH_COOKIE : AUTH_COOKIE );
+			},
+			10,
+			5
+		);
+		add_action(
+			'set_logged_in_cookie',
+			static function ( $cookie ) use ( $adopt ) {
+				$adopt( $cookie, LOGGED_IN_COOKIE );
+			}
+		);
+
 		wp_set_auth_cookie( 1, true );
-
-		// On the login screen go to where the visitor was heading; elsewhere reload the same page.
-		$target = $GLOBALS['pagenow'] === 'wp-login.php'
-			? ( isset( $_GET['redirect_to'] ) ? wp_unslash( $_GET['redirect_to'] ) : admin_url() ) // phpcs:ignore
-			: ( is_ssl() ? 'https://' : 'http://' ) . ( $_SERVER['HTTP_HOST'] ?? '' ) . ( $_SERVER['REQUEST_URI'] ?? '/' ); // phpcs:ignore
-
-		// The flag stops a redirect loop if the browser refuses the cookie.
-		wp_safe_redirect( add_query_arg( 'ltf_demo_login', '1', $target ) );
-		exit;
+		wp_set_current_user( 1 );
 	},
 	1
 );
